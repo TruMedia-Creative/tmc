@@ -80,23 +80,22 @@ const props = defineProps<{ project: Project2 }>();
       </UButton>
     </div>
 
-    <div
-      class="rounded-2xl border border-white/60 bg-white/75 p-6 shadow-lg backdrop-blur"
-    >
-      <p class="text-sm font-semibold text-slate-500">Project overview</p>
-      <div class="mt-4 grid gap-4 sm:grid-cols-2">
-        <div class="space-y-2">
-          <p class="text-sm font-semibold text-slate-900">Challenge</p>
-          <p class="text-sm text-slate-600">
-            {{ props.project.challenge }}
-          </p>
-        </div>
-        <div class="space-y-2">
-          <p class="text-sm font-semibold text-slate-900">Solution</p>
-          <p class="text-sm text-slate-600">
-            {{ props.project.solution }}
-          </p>
-        </div>
+    <div class="space-y-4">
+      <div
+        class="rounded-3xl border border-white/50 bg-white/80 p-6 shadow-xl backdrop-blur"
+      >
+        <p class="text-sm font-semibold text-slate-900">Challenge</p>
+        <p class="mt-3 text-sm text-slate-600">
+          {{ props.project.challenge }}
+        </p>
+      </div>
+      <div
+        class="rounded-3xl border border-white/50 bg-white/80 p-6 shadow-xl backdrop-blur"
+      >
+        <p class="text-sm font-semibold text-slate-900">Solution</p>
+        <p class="mt-3 text-sm text-slate-600">
+          {{ props.project.solution }}
+        </p>
       </div>
     </div>
   </div>
