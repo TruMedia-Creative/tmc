@@ -24,6 +24,7 @@ const { data: page } = await useAsyncData("page-name", () =>
 
 **Package Management**: Uses `pnpm` (not npm/yarn). Key commands:
 
+- `pnpm bootstrap` - Enable Corepack and install dependencies (first-time setup)
 - `pnpm dev` - Development server on http://localhost:3000
 - `pnpm build` - Production build
 - `pnpm generate` - Static site generation
@@ -33,8 +34,21 @@ const { data: page } = await useAsyncData("page-name", () =>
 - `pnpm format` - Check code formatting with Prettier
 - `pnpm format:fix` - Fix code formatting with Prettier
 - `pnpm fix` - Auto-fix formatting and linting issues
-- `pnpm check` - Fix formatting/linting and run typecheck - **Use before finalizing changes**
+- `pnpm check` - Run lint, typecheck, and build - **Use before finalizing changes**
 - `pnpm clean` - Clean Nuxt cache and build artifacts (runs `npx nuxt cleanup`)
+
+**Bootstrap & Check Sequence** (use this order):
+
+```sh
+pnpm bootstrap   # first-time: enables Corepack + installs deps with frozen lockfile
+pnpm check       # validates lint + types + build
+```
+
+- Always run from repo root
+- Use Node version from `.nvmrc` (Node 22)
+- Use pnpm via Corepack only — do not use npm or yarn
+- Skip reinstall if `node_modules` is already populated; run `pnpm install --frozen-lockfile` only when lockfile changes
+- Prefer `pnpm fix` to auto-correct formatting/lint before running `pnpm check`
 
 **Content Updates**: Edit YAML files in `/content/` which automatically sync with pages. Schema validation in `content.config.ts` ensures type safety.
 
