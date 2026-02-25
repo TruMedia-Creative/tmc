@@ -35,6 +35,16 @@ useSeoMeta({
       <HomeSections :sections="page.sections" />
     </FadeInUp>
 
+    <FadeInUp v-if="page.cta_after_sections" :delay="0.2">
+      <UContainer>
+        <UPageCTA
+          v-bind="page.cta_after_sections"
+          variant="naked"
+          class="py-8"
+        />
+      </UContainer>
+    </FadeInUp>
+
     <FadeInUp :delay="0.2">
       <ProcessSteps
         v-if="page.process"
@@ -42,6 +52,16 @@ useSeoMeta({
         :subtitle="page.process.description"
         :steps="page.process.steps"
       />
+    </FadeInUp>
+
+    <FadeInUp v-if="page.cta_after_process" :delay="0.2">
+      <UContainer>
+        <UPageCTA
+          v-bind="page.cta_after_process"
+          variant="naked"
+          class="py-8"
+        />
+      </UContainer>
     </FadeInUp>
 
     <FadeInUp :delay="0.2">
