@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData(() =>
-  queryCollection("churchesministries").first(),
+  queryCollection("nonprofits").first(),
 );
 
 const title = page.value?.seo?.title || page.value?.title;
@@ -26,7 +26,7 @@ useSeoMeta({
         <h1 class="text-5xl md:text-7xl font-bold leading-tight">
           Professional
           <span class="text-primary italic"> AV & Live Streaming</span>
-          for Churches & Ministries.
+          for Non-Profits.
         </h1>
       </template>
 

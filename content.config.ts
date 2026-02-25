@@ -696,8 +696,8 @@ export const collections = {
     type: "page",
     schema: createIndustryPageSchema(),
   }),
-  churchesministries: defineCollection({
-    source: "industries/churches-and-ministries.yml",
+  nonprofits: defineCollection({
+    source: "industries/non-profits.yml",
     type: "page",
     schema: createIndustryPageSchema(),
   }),

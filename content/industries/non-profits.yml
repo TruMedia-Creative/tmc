@@ -1,0 +1,142 @@
+title: Amplify Your Mission with Professional Video & Marketing
+description: |
+  Reach more donors. Engage your community. Expand your nonprofit's impact.
+  Professional video production and marketing solutions designed specifically for nonprofits and mission-driven organizations.
+
+seo:
+  title: TruMedia Creative | Video Production & Marketing for Non-Profits (NJ)
+  description: Professional video production and marketing services for nonprofits. Transform your fundraising, events, and outreach with broadcast-quality AV solutions. Consultation available.
+navigation: false
+hero:
+  headline: Non-Profit Video & Marketing Solutions
+  description: Professional video production and marketing services designed for nonprofits and mission-driven organizations
+  links:
+    - label: Schedule a Free Consultation
+      icon: i-lucide-calendar
+      trailing: true
+      to: https://trumediacreative.hbportal.co/schedule/6442d82d7999d90d3e0b430a
+      size: xl
+sections:
+  - title: Complete Non-Profit Video & Marketing Solutions
+    description: From fundraising events to community outreach, we provide professional video production and marketing services that help your organization reach more donors, volunteers, and supporters.
+    headline: Transform Your Impact with Professional Video
+    id: how-we-help
+    orientation: horizontal
+    features:
+      - name: Live Stream Production
+        description: Broadcast-quality live streaming for fundraising galas, community events, and virtual outreach. Multi-camera setups, professional audio, and seamless delivery to YouTube, Facebook, and your website.
+        icon: i-lucide-video
+      - name: AV System Design & Support
+        description: Complete audio-visual system design, installation, and ongoing technical support. From cameras and microphones to lighting and streaming equipment—we handle it all.
+        icon: i-lucide-settings
+      - name: Content Production
+        description: Professional video production for donor stories, impact reports, program highlights, and promotional content that engages your community and attracts new supporters.
+        icon: i-lucide-film
+  - title: Storytelling That Honors Your Mission
+    description: We understand the unique needs of nonprofits. Our team brings technical excellence and mission sensitivity to every project, ensuring your story reaches hearts both in-person and online.
+    id: features
+    orientation: horizontal
+    features:
+      - name: Multi-Camera Event Production
+        description: Professional camera operators and directors who understand your event flow. Seamless switching, graphics integration, and presentation support that enhances your message.
+        icon: i-lucide-camera
+      - name: Professional Audio Engineering
+        description: Crystal-clear sound mixing for speakers, performers, and special presentations. Eliminate feedback, balance audio, and deliver sound that moves your audience.
+        icon: i-lucide-mic-2
+      - name: Lighting Design
+        description: Event-focused lighting design that creates atmosphere, enhances video quality, and helps your audience engage with the message.
+        icon: i-lucide-lightbulb
+  - title: Expand Your Reach Beyond the Room
+    description: Your mission shouldn't be limited by venue capacity. Our streaming and content solutions help you reach remote supporters, engage younger donors, and connect with people who aren't yet familiar with your cause.
+    orientation: horizontal
+    reverse: true
+    features:
+      - name: Multi-Platform Streaming
+        description: Simultaneous streaming to YouTube, Facebook, your organization's website, and social platforms. Automated archiving and video libraries that build your digital presence.
+        icon: i-lucide-cast
+      - name: Social Media Content
+        description: Transform your events into shareable clips, donor testimonials, and impact highlights optimized for Instagram, TikTok, and Facebook to reach wider audiences.
+        icon: i-lucide-share-2
+      - name: Training & Staff Support
+        description: Equip your staff and volunteers with professional training. We'll teach your team to run cameras, manage audio, and operate streaming systems with confidence.
+        icon: i-lucide-users
+clients:
+  title: Serving Non-Profits & Mission-Driven Organizations
+  description: We've had the privilege of partnering with nonprofits and community organizations to amplify their mission and expand their impact.
+  items:
+    - name: Community Fellowship Church
+      logo: /images/clients/chickfila.png
+    - name: Grace Baptist Church
+      logo: /images/clients/bidchip.png
+    - name: New Life Christian Center
+      logo: /images/clients/pjpolke.png
+    - name: Faith Chapel
+      logo: /images/clients/ici.png
+    - name: Cornerstone Assembly
+      logo: /images/clients/amazon.png
+    - name: Victory Church
+      logo: /images/clients/nascar.png
+    - name: Riverside Community Church
+      logo: /images/clients/ritas1.png
+features:
+  title: Everything Your Non-Profit Needs for Professional Video & Streaming
+  description: From initial consultation to ongoing support, we provide complete solutions that make professional-quality video production accessible and sustainable for nonprofits of all sizes.
+  items:
+    - title: Professional Equipment
+      description: Access to broadcast-quality cameras, audio systems, lighting, and streaming gear—no need to buy expensive equipment upfront.
+      icon: i-lucide-camera
+    - title: Expert Technicians
+      description: Experienced production crew who understand the flow of nonprofit events and community programs.
+      icon: i-lucide-user-check
+    - title: Fast Setup
+      description: Quick deployment for special events, or permanent installation for ongoing programs. We work around your schedule.
+      icon: i-lucide-rocket
+    - title: Staff & Volunteer Training
+      description: Comprehensive training programs that empower your team to run professional-quality productions independently.
+      icon: i-lucide-graduation-cap
+    - title: Multi-Platform Distribution
+      description: Stream to YouTube, Facebook, your website, and apps—all managed from one system with automated archiving.
+      icon: i-lucide-monitor-play
+    - title: Ongoing Support
+      description: Technical support available when you need it, plus regular equipment maintenance and software updates.
+      icon: i-lucide-headset
+testimonials:
+  headline: What Non-Profits Are Saying
+  title: Real Results from Real Organizations
+  description: See how nonprofits like yours are using professional video and marketing to expand their reach and deepen community engagement.
+  items:
+    - quote: TruMedia Creative transformed our livestream from a challenge into a strength. Their thoughtful outcomes, clear planning, and technical expertise gave us a consistent, high-quality livestream and a confident, engaged tech team. We highly recommend them for AV and livestream upgrades.
+      user:
+        name: Jeff Mehl
+        description: Operations Director at Shore Christian Church
+        avatar:
+          src:
+    - quote: Our online attendance tripled after upgrading our streaming setup. Now we reach members who can't attend in person and visitors who are checking us out before visiting.
+      user:
+        name: Pastor Mike Johnson
+        description: Community Church, NJ
+        avatar:
+          src: https://i.pravatar.cc/120?img=12
+    - quote: The training they provided gave our volunteer team the confidence to run professional productions every Sunday. Our worship experience has never looked or sounded better.
+      user:
+        name: Sarah Williams
+        description: Worship Director, Faith Chapel
+        avatar:
+          src: https://i.pravatar.cc/120?img=5
+    - quote: We went from struggling with basic streaming to producing multi-camera events with professional graphics. The impact on our organization has been incredible.
+      user:
+        name: Rev. David Martinez
+        description: Grace Community Church
+        avatar:
+          src: https://i.pravatar.cc/120?img=8
+cta:
+  title: Ready to Amplify Your Non-Profit's Impact?
+  description: Schedule a free consultation to discuss your organization's video and marketing needs. We'll assess your current setup, understand your mission goals, and create a custom solution that fits your budget.
+  links:
+    - label: Schedule Free Consultation
+      to: https://trumediacreative.hbportal.co/schedule/6442d82d7999d99d3e0b430a
+      trailingIcon: i-lucide-arrow-right
+    - label: View Sample Projects
+      to: /
+      variant: subtle
+      icon: i-lucide-play-circle

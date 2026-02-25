@@ -71,8 +71,8 @@ columns:
         to: /industries/health-and-wellness
         icon: i-lucide-heart-pulse
         disabled: false
-      - label: Churches & Ministries
-        to: /industries/churches-and-ministries
+      - label: Non-Profits
+        to: /industries/non-profits
         icon: i-lucide-heart
         disabled: false
 
