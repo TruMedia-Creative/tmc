@@ -59,6 +59,17 @@ sections:
       -  #title: We're ready to grow.
         #description:
         #icon: i-lucide-circle-x
+cta_after_sections:
+  title: Sound Like Your Business?
+  description: Let's talk about what's holding your marketing back and build a plan to fix it.
+  links:
+    - label: Book a Free Strategy Call
+      to: https://trumediacreative.hbportal.co/schedule/6442d82d7999d90d3e0b430a
+      icon: i-lucide-calendar
+    - label: See How We Work
+      to: /#process
+      variant: subtle
+      icon: i-lucide-list-ordered
 #TODO: Update client logos to SVGs where possible, as well as formatting correct dimensions and alt text.
 clients:
   title: Featured Clients
@@ -156,6 +167,17 @@ process:
       image:
         src: /images/home/process-deploy.jpg
         alt: Analyzing video marketing performance data
+cta_after_process:
+  title: Ready to Put This Process to Work for You?
+  description: Our 4-step system turns your expertise into a marketing engine that generates leads and shortens sales cycles. Let's start building yours.
+  links:
+    - label: Start With a Strategy Call
+      to: https://trumediacreative.hbportal.co/schedule/6442d82d7999d90d3e0b430a
+      icon: i-lucide-phone
+    - label: Explore Our Services
+      to: /services
+      variant: subtle
+      icon: i-lucide-layers
 testimonials:
   headline: Hear From Our Clients
   title: Recent Work & Outcomes

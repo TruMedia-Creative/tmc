@@ -410,6 +410,7 @@ export const collections = {
     schema: createPageMetaSchema().extend({
       hero: createHeroSchema(),
       sections: z.array(createSectionSchema()),
+      cta_after_sections: createCTASchema().optional(),
       clients: createClientsSchema(),
       features: createBaseSchema().extend({
         items: z.array(createFeatureItemSchema()),
@@ -422,6 +423,7 @@ export const collections = {
           steps: z.array(createProcessStepSchema()),
         })
         .optional(),
+      cta_after_process: createCTASchema().optional(),
       testimonials: createTestimonialsSchema(),
       cta_after_testimonials: createCTASchema().optional(),
       cta: createCTASchema(),
