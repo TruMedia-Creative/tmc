@@ -34,7 +34,7 @@ items:
   - title: Nonprofits
     description: Amplify your mission and impact with compelling storytelling that inspires action and drives donations.
     icon: i-lucide-hand-heart
-    to: /industries/churches-and-ministries
+    to: /industries/non-profits
   - title: Live Events & Entertainment
     description: Create unforgettable experiences with professional event production and promotional content that fills seats.
     icon: i-lucide-ticket

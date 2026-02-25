@@ -13,9 +13,9 @@ items:
         icon: "i-lucide-utensils"
         to: "/industries/food-services"
         disabled: false
-      - label: "Churches & Ministries"
+      - label: "Non-Profits"
         icon: "i-lucide-heart"
-        to: "/industries/churches-and-ministries"
+        to: "/industries/non-profits"
         disabled: false
       - label: "Health & Wellness"
         icon: "i-lucide-heart-pulse"
