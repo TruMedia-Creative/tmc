@@ -13,6 +13,20 @@ useSeoMeta({
   ogDescription: description,
 });
 
+const { trackCtaClick } = useAnalytics();
+
+const trackContactMethodClick = (title: string, href?: string) => {
+  if (!href) {
+    return;
+  }
+
+  trackCtaClick({
+    label: title,
+    destination: href,
+    location: "contact_page",
+  });
+};
+
 // Contact card configuration
 const contactCards = computed(() => {
   if (!page.value?.contactInfo) return [];
@@ -100,6 +114,7 @@ const contactCards = computed(() => {
                   v-if="card.href"
                   :href="card.href"
                   class="text-primary hover:underline"
+                  @click="trackContactMethodClick(card.title, card.href)"
                 >
                   {{ card.content }}
                 </a>

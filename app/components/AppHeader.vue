@@ -16,6 +16,16 @@ const mobileItems = computed(() =>
     open: true,
   })),
 );
+
+const { trackCtaClick } = useAnalytics();
+
+const trackHeaderContactCta = (location: string) => {
+  trackCtaClick({
+    label: "Contact Us",
+    destination: "/contact",
+    location,
+  });
+};
 </script>
 
 <template>
@@ -59,6 +69,7 @@ const mobileItems = computed(() =>
         to="/contact"
         aria-label="Contact Us"
         class="lg:hidden"
+        @click="trackHeaderContactCta('header_mobile')"
       />
 
       <UButton
@@ -67,6 +78,7 @@ const mobileItems = computed(() =>
         variant="solid"
         to="/contact"
         class="hidden lg:inline-flex text-lg header-cta-button"
+        @click="trackHeaderContactCta('header_desktop')"
       />
       <UColorModeButton />
       <!-- <UButton

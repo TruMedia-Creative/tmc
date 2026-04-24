@@ -20,12 +20,14 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
 
 const title = post.value.seo?.title || post.value.title;
 const description = post.value.seo?.description || post.value.description;
+const robots = post.value.noindex ? "noindex, nofollow" : "index, follow";
 
 useSeoMeta({
   title,
   ogTitle: title,
   description,
   ogDescription: description,
+  robots,
 });
 
 if (post.value.image?.src) {

@@ -4,9 +4,10 @@ const route = useRoute();
 const { data: page } = await useAsyncData("resources", () =>
   queryCollection("resources").first(),
 );
-const { data: posts } = await useAsyncData(route.path, () =>
-  queryCollection("posts").all(),
-);
+const { data: posts } = await useAsyncData(route.path, async () => {
+  const items = await queryCollection("resources_posts").all();
+  return items.filter((post) => !post.noindex);
+});
 
 const title = page.value?.seo?.title || page.value?.title;
 const description = page.value?.seo?.description || page.value?.description;
