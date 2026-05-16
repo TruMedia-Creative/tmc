@@ -53,5 +53,10 @@
   "resolutions": {
     "unimport": "4.1.1"
   },
+  "pnpm": {
+    "overrides": {
+      "simple-git": "3.32.3"
+    }
+  },
   "packageManager": "pnpm@10.15.1"
 }
