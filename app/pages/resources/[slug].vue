@@ -28,17 +28,8 @@ useSeoMeta({
   description,
   ogDescription: description,
   robots,
+  ogImage: post.value.image?.src,
 });
-
-if (post.value.image?.src) {
-  defineOgImage({
-    url: post.value.image.src,
-  });
-} else {
-  defineOgImageComponent("Saas", {
-    headline: "Resources",
-  });
-}
 </script>
 
 <template>
