@@ -1,178 +1,24 @@
-<script setup>
-// Additional projects not in ProjectsPortfolio
-const additionalProjects = ref([
-  {
-    title: "Ballroom Lighting Design for a Luxury Country Club Event Space",
-    to: "/projects/fiddlers-elbow-country-club",
-    thumbnail: "/images/projects/thumbnails/fiddlers-elbow-ballroom.jpg",
-    tags: ["AV Design", "AV Install"],
-    client_type: "Venue",
-    year: 2023,
-  },
-  {
-    title: "9.1× Revenue Growth for an Industrial Snow & Ice Contractor",
-    to: "/projects/advanced-snow-management",
-    thumbnail: "/images/projects/thumbnails/snow-removal.jpg",
-    tags: [
-      "Industrial Marketing Strategy",
-      "Proposal & RFP Support",
-      "Sales Messaging & Positioning",
-    ],
-    client_type: "Commercial Snow & Ice Management Client",
-    year: 2024,
-  },
-  {
-    title: "Seller Re-Activation & Outbound Growth for a B2B Marketplace",
-    to: "/projects/bidchip",
-    thumbnail: "/images/projects/thumbnails/bidchip.png",
-    tags: [
-      "Activation & Re-Engagement Strategy",
-      "Outbound Campaign Design",
-      "Sales Messaging & Email Systems",
-    ],
-    client_type: "B2B E-commerce Semiconductor Client",
-    year: 2024,
-  },
-  {
-    title: "Increasing Retention and Demand for a High-End Local Salon",
-    to: "/projects/cut-artisan-hair-design",
-    thumbnail: "/images/projects/thumbnails/hair-salon.jpg",
-    tags: [
-      "Local SEO Strategy",
-      "Client Retention & Re-Engagement Campaigns",
-      "Paid Ads Strategy",
-    ],
-    client_type: "High-End Local Hair Salon Client",
-    year: 2024,
-  },
-  {
-    title: "Building an Outbound Lead System for a Financial Consulting Firm",
-    to: "/projects/ici-consulting",
-    thumbnail: "/images/projects/thumbnails/ici-consulting.jpg",
-    tags: [
-      "Outbound Strategy & Campaign Design",
-      "Sales Messaging & Positioning",
-      "Sales Enablement & Performance Tracking",
-    ],
-    client_type: "Financial Consulting Client",
-    year: 2024,
-  },
-  {
-    title: "Meal Prep E-Commerce Case Study: Shopify 2.0 UX and Conversion",
-    to: "/projects/nourish-to-heal-2",
-    thumbnail: "/images/web-design/nourish-to-heal/nourish-to-heal-hero.png",
-    tags: [
-      "Shopify 2.0 Web Design",
-      "UX & Conversion Strategy",
-      "Brand Messaging & Positioning",
-    ],
-    client_type: "Meal Prep and Nutrition Brand Client",
-    year: 2024,
-  },
-  {
-    title: "Live Production and Media Systems for a Modern Church Campus",
-    to: "/projects/south-ridge-cc",
-    thumbnail: "/images/projects/thumbnails/south-ridge-cc.jpg",
-    tags: ["Live Streaming", "AV Design", "AV Installation"],
-    client_type: "House of Worship",
-    year: 2024,
-  },
-  {
-    title: "Livestream and Worship Production Systems for a Growing Church",
-    to: "/projects/shore-christian",
-    thumbnail: "/images/projects/thumbnails/shore-christian.jpg",
-    tags: ["Live Streaming", "AV Design", "AV Installation"],
-    client_type: "House of Worship",
-    year: 2024,
-  },
-  {
-    title: "Sanctuary Audio and Media Upgrades for a Historic Church",
-    to: "/projects/olivet-baptist-church",
-    thumbnail: "/images/projects/thumbnails/olivet-baptist.jpg",
-    tags: ["Live Streaming", "AV Design", "AV Installation"],
-    client_type: "House of Worship",
-    year: 2023,
-  },
-  {
-    title: "Portable Worship and Livestream Systems for a Church Plant",
-    to: "/projects/resurgent",
-    thumbnail: "/images/projects/thumbnails/resurgent.jpg",
-    tags: ["Live Streaming", "AV Design", "AV Installation"],
-    client_type: "House of Worship",
-    year: 2024,
-  },
-  {
-    title: "Simple Post-Covid Streaming Solution for Local Church",
-    to: "/projects/church/spruce-run-lutheran",
-    thumbnail: "/images/projects/thumbnails/spruce-run-lutheran.jpg",
-    tags: ["Live Streaming", "AV Design", "AV Installation"],
-    client_type: "House of Worship",
-    year: 2023,
-  },
-]);
+<script setup lang="ts">
+import type { AdditionalProject } from "~/types/project";
 
-// Filter state
-const selectedTags = ref([]);
-const selectedClientTypes = ref([]);
+const { data: additionalProjectsPage } = await useAsyncData(
+  "additional-projects",
+  () => queryCollection("additionalProjects").first(),
+);
 
-// Extract unique tags and client types
-const allTags = computed(() => {
-  const tags = new Set();
-  additionalProjects.value.forEach((project) => {
-    project.tags?.forEach((tag) => tags.add(tag));
-  });
-  return Array.from(tags).sort();
-});
+const additionalProjects = computed(
+  () => (additionalProjectsPage.value?.items as AdditionalProject[]) || [],
+);
 
-const allClientTypes = computed(() => {
-  const types = new Set();
-  additionalProjects.value.forEach((project) => {
-    if (project.client_type) {
-      types.add(project.client_type);
-    }
-  });
-  return Array.from(types).sort();
-});
-
-// Filter projects based on selected filters
-const filteredProjects = computed(() => {
-  return additionalProjects.value.filter((project) => {
-    // If no filters selected, show all projects
-    if (
-      selectedTags.value.length === 0 &&
-      selectedClientTypes.value.length === 0
-    ) {
-      return true;
-    }
-
-    // Check if project matches selected tags (any tag match)
-    const matchesTags =
-      selectedTags.value.length === 0 ||
-      project.tags?.some((tag) => selectedTags.value.includes(tag));
-
-    // Check if project matches selected client types (any type match)
-    const matchesClientType =
-      selectedClientTypes.value.length === 0 ||
-      (project.client_type &&
-        selectedClientTypes.value.includes(project.client_type));
-
-    // Project must match both filter categories if both have selections, otherwise match either
-    return selectedTags.value.length > 0 && selectedClientTypes.value.length > 0
-      ? matchesTags && matchesClientType
-      : matchesTags || matchesClientType;
-  });
-});
-
-// Clear all filters
-const clearFilters = () => {
-  selectedTags.value = [];
-  selectedClientTypes.value = [];
-};
-
-// Check if any filters are active
-const hasActiveFilters = computed(() => {
-  return selectedTags.value.length > 0 || selectedClientTypes.value.length > 0;
-});
+const {
+  selectedTags,
+  selectedClientTypes,
+  allTags,
+  allClientTypes,
+  filteredProjects,
+  hasActiveFilters,
+  clearFilters,
+} = useAdditionalProjectsFilter(additionalProjects);
 </script>
 
 <template>
