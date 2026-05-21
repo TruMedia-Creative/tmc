@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { OFFER_FIELD_SECTIONS } from "~/constants/offerCreator";
+import type { OfferCreatorData } from "~/types/offer";
 
 const {
   form,
@@ -12,6 +13,12 @@ const {
   generateOffer,
   resetForm,
 } = useOfferCreatorForm();
+
+type OfferTextFieldKey = Exclude<keyof OfferCreatorData, "useWeLanguage" | "theme">;
+
+const updateField = (fieldName: OfferTextFieldKey, value: string) => {
+  form[fieldName] = value;
+};
 
 const copyToClipboard = async () => {
   if (!generated.value) return;
@@ -51,11 +58,12 @@ const copyToClipboard = async () => {
         v-for="section in OFFER_FIELD_SECTIONS"
         :key="section.title"
         :section="section"
-        :form="form"
+        :form-values="form"
         :has-error="hasError"
         :get-error-message="getErrorMessage"
         :handle-blur="handleBlur"
         :handle-input="handleInput"
+        @update-field="updateField"
       />
 
       <div

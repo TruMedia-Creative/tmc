@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { page } = await useCollectionPageSeo("fixyourlivestreamandevents");
+const { page } = useCollectionPageSeo("fixyourlivestreamandevents");
 </script>
 
 <template>

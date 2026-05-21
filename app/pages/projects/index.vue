@@ -63,7 +63,7 @@ const {
               <UButton
                 v-if="hasActiveFilters"
                 variant="outline"
-                color="gray"
+                color="neutral"
                 @click="clearFilters"
               >
                 Clear Filters
@@ -93,7 +93,7 @@ const {
             <UBadge
               v-for="type in selectedClientTypes"
               :key="`type-${type}`"
-              color="blue"
+              color="info"
               variant="soft"
               size="md"
             >

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { page } = await useCollectionPageSeo("nonprofits");
+const { page } = useCollectionPageSeo("nonprofits");
 </script>
 
 <template>

@@ -1,7 +1,44 @@
 <script setup lang="ts">
-withDefaults(
+interface CollectionPageSection {
+  title?: string;
+  description?: string;
+  headline?: string;
+  orientation?: "vertical" | "horizontal";
+  reverse?: boolean;
+  features?: Record<string, unknown>[];
+  price?: string | { display?: string; amount?: number; billing?: string };
+}
+
+interface CollectionPageTestimonial {
+  quote?: string;
+  user?: Record<string, unknown>;
+}
+
+interface CollectionPage {
+  title?: string;
+  description?: string;
+  hero?: {
+    headline?: string;
+    links?: Record<string, unknown>[];
+  };
+  sections?: CollectionPageSection[];
+  features?: {
+    title?: string;
+    description?: string;
+    items?: Record<string, unknown>[];
+  };
+  testimonials?: {
+    headline?: string;
+    title?: string;
+    description?: string;
+    items?: CollectionPageTestimonial[];
+  };
+  cta?: Record<string, unknown>;
+}
+
+const props = withDefaults(
   defineProps<{
-    page: any;
+    page: CollectionPage;
     showBackButton?: boolean;
     sectionsFirst?: boolean;
     showSections?: boolean;
@@ -17,6 +54,10 @@ withDefaults(
     showTestimonials: true,
     showCta: true,
   },
+);
+
+const sectionItems = computed(() =>
+  props.showSections ? props.page.sections || [] : [],
 );
 </script>
 
@@ -42,8 +83,7 @@ withDefaults(
 
     <template v-if="sectionsFirst">
       <UPageSection
-        v-if="showSections"
-        v-for="(section, index) in page.sections"
+        v-for="(section, index) in sectionItems"
         :key="`section-${index}`"
         :title="section.title"
         :description="section.description"
@@ -89,8 +129,7 @@ withDefaults(
       </UPageSection>
 
       <UPageSection
-        v-if="showSections"
-        v-for="(section, index) in page.sections"
+        v-for="(section, index) in sectionItems"
         :key="`section-${index}`"
         :title="section.title"
         :description="section.description"

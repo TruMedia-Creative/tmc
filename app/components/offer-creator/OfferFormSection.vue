@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import type { OfferCreatorData, OfferFieldSection } from "~/types/offer";
 
+type OfferTextFieldKey = Exclude<keyof OfferCreatorData, "useWeLanguage" | "theme">;
+
 const props = defineProps<{
   section: OfferFieldSection;
-  form: OfferCreatorData;
-  hasError: (fieldName: keyof OfferCreatorData) => boolean;
-  getErrorMessage: (fieldName: keyof OfferCreatorData) => string;
-  handleBlur: (fieldName: keyof OfferCreatorData) => void;
-  handleInput: (fieldName: keyof OfferCreatorData) => void;
+  formValues: OfferCreatorData;
+  hasError: (fieldName: OfferTextFieldKey) => boolean;
+  getErrorMessage: (fieldName: OfferTextFieldKey) => string;
+  handleBlur: (fieldName: OfferTextFieldKey) => void;
+  handleInput: (fieldName: OfferTextFieldKey) => void;
+}>();
+
+const emit = defineEmits<{
+  updateField: [fieldName: OfferTextFieldKey, value: string];
 }>();
 
 const sectionClass = computed(() =>
@@ -31,7 +37,7 @@ const sectionClass = computed(() =>
           <span v-if="field.required" class="text-red-600">*</span>
         </span>
         <input
-          v-model="form[field.key]"
+          :value="formValues[field.key]"
           :type="field.type || 'text'"
           :placeholder="field.placeholder"
           :class="[
@@ -40,8 +46,17 @@ const sectionClass = computed(() =>
               ? 'border-red-500 focus:border-red-500 focus:ring-red-500'
               : 'border-gray-300 dark:border-gray-700',
           ]"
+          @input="
+            ($event) => {
+              emit(
+                'updateField',
+                field.key,
+                ($event.target as HTMLInputElement).value,
+              );
+              handleInput(field.key);
+            }
+          "
           @blur="handleBlur(field.key)"
-          @input="handleInput(field.key)"
         />
         <span v-if="hasError(field.key)" class="text-xs text-red-600 mt-1">
           {{ getErrorMessage(field.key) }}

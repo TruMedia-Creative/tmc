@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { page } = await useCollectionPageSeo("outreachengine");
+const { page } = useCollectionPageSeo("outreachengine");
 </script>
 
 <template>

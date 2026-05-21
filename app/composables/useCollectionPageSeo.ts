@@ -1,18 +1,31 @@
 interface BaseCollectionPage {
+  [key: string]: unknown;
   seo?: {
     title?: string;
     description?: string;
   };
   title?: string;
   description?: string;
+  cta?: Record<string, unknown>;
+  pricing?: {
+    title?: string;
+    description?: string;
+    items?: unknown[];
+  };
 }
 
-export async function useCollectionPageSeo<T extends BaseCollectionPage>(
+export function useCollectionPageSeo(
   collection: string,
   key?: string,
 ) {
-  const { data: page } = await useAsyncData(key ?? collection, () =>
-    queryCollection(collection).first() as Promise<T | null>,
+  const collectionName = collection as Parameters<typeof queryCollection>[0];
+
+  const { data: pageData } = useAsyncData(key ?? String(collection), () =>
+    queryCollection(collectionName).first(),
+  );
+
+  const page = computed(
+    () => (pageData.value || null) as BaseCollectionPage | null,
   );
 
   const title = computed(() => page.value?.seo?.title || page.value?.title);
