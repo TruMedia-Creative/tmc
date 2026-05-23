@@ -738,6 +738,22 @@ export const collections = {
       testimonial: createTestimonialSchema().optional(),
     }),
   }),
+  additionalProjects: defineCollection({
+    source: "projects/additional.yml",
+    type: "page",
+    schema: z.object({
+      items: z.array(
+        z.object({
+          title: z.string().nonempty(),
+          to: z.string().nonempty(),
+          thumbnail: z.string().nonempty().editor({ input: "media" }),
+          tags: z.array(z.string().nonempty()).optional(),
+          client_type: z.string().optional(),
+          year: z.number().optional(),
+        }),
+      ),
+    }),
+  }),
 
   // Resources & Blog
   docs: defineCollection({

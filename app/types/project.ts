@@ -55,3 +55,12 @@ export interface ProcessStep {
     text: string;
   };
 }
+
+export interface AdditionalProject {
+  title: string;
+  to: string;
+  thumbnail: string;
+  tags?: string[];
+  client_type?: string;
+  year?: number;
+}
