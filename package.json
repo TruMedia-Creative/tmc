@@ -36,9 +36,9 @@
     "better-sqlite3": "^12.10.0",
     "marked": "^17.0.6",
     "motion-v": "^1.10.3",
-    "nuxt": "^4.4.6",
+    "nuxt": "^4.4.7",
     "nuxt-gtag": "4.1.0",
-    "nuxt-og-image": "^6.5.1",
+    "nuxt-og-image": "^6.5.2",
     "unhead": "^2.1.15",
     "zod": "^4.4.3"
   },
