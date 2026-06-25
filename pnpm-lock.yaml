@@ -24,8 +24,8 @@ importers:
         specifier: ^3.9.0
         version: 3.9.0(better-sqlite3@12.5.0)(magicast@0.5.3)(valibot@1.2.0(typescript@5.9.3))
       '@nuxt/fonts':
-        specifier: 0.12.1
-        version: 0.12.1(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)(magicast@0.5.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))
+        specifier: 0.14.0
+        version: 0.14.0(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)(magicast@0.5.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))
       '@nuxt/hints':
         specifier: 1.0.0-alpha.3
         version: 1.0.0-alpha.3(@netlify/blobs@9.1.2)(better-sqlite3@12.5.0)(magicast@0.5.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))(vue@3.5.26(typescript@5.9.3))
@@ -67,7 +67,7 @@ importers:
         version: 4.1.0(magicast@0.5.3)
       nuxt-og-image:
         specifier: ^6.4.9
-        version: 6.4.9(@nuxt/schema@4.2.2)(@resvg/resvg-js@2.6.2)(@resvg/resvg-wasm@2.6.2)(@unhead/vue@2.0.19(vue@3.5.26(typescript@5.9.3)))(nuxt@4.2.2(@netlify/blobs@9.1.2)(@parcel/watcher@2.5.6)(@types/node@25.8.0)(@vue/compiler-sfc@3.5.34)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.10.1)(lightningcss@1.32.0)(magicast@0.5.3)(optionator@0.9.4)(rollup@4.60.4)(terser@5.47.1)(typescript@5.9.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))(vue-tsc@3.1.8(typescript@5.9.3))(yaml@2.9.0))(playwright-core@1.57.0)(sharp@0.34.5)(tailwindcss@4.1.18)(unstorage@1.17.5(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1))(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))(vue@3.5.26(typescript@5.9.3))(zod@4.2.1)
+        version: 6.4.9(f6b8eac05a1ae8d623bb543a61e316a1)
       unhead:
         specifier: ^2.1.13
         version: 2.1.13
@@ -259,6 +259,10 @@ packages:
 
   '@capsizecss/unpack@3.0.1':
     resolution: {integrity: sha512-8XqW8xGn++Eqqbz3e9wKuK7mxryeRjs4LOHLxbh2lwKeSbuNR4NFifDZT4KzvjU6HMOPbiNTsWpniK5EJfTWkg==}
+    engines: {node: '>=18'}
+
+  '@capsizecss/unpack@4.0.1':
+    resolution: {integrity: sha512-CuNiSqg7+e1cO/GjffyMOm5Tt2jUF9CWHHnvQ/UkqvtkGfHdgwEC0wpmq7fkN3gxwpRnrAN0WzO3vREKmNolMQ==}
     engines: {node: '>=18'}
 
   '@clack/core@0.5.0':
@@ -1156,6 +1160,11 @@ packages:
     peerDependencies:
       vite: '>=6.0'
 
+  '@nuxt/devtools-kit@3.2.4':
+    resolution: {integrity: sha512-Yxy2Xgmq5hf3dQy983V0xh0OJV2mYwRZz9eVIGc3EaribdFGPDNGMMbYqX9qCty3Pbxn/bCF3J0UyPaNlHVayQ==}
+    peerDependencies:
+      vite: '>=6.0'
+
   '@nuxt/devtools-kit@4.0.0-alpha.3':
     resolution: {integrity: sha512-ymp4jqS3hFfwRw8uDkv8cpu4kWvhQrX+S4jnA/oOc76s4AXf2HCZZJgrncKxh+txqi1NJj8nsQNBbaqRAo3g4w==}
     peerDependencies:
@@ -1203,6 +1212,9 @@ packages:
 
   '@nuxt/fonts@0.12.1':
     resolution: {integrity: sha512-ALajI/HE+uqqL/PWkWwaSUm1IdpyGPbP3mYGy2U1l26/o4lUZBxjFaduMxaZ85jS5yQeJfCu2eEHANYFjAoujQ==}
+
+  '@nuxt/fonts@0.14.0':
+    resolution: {integrity: sha512-4uXQl9fa5F4ibdgU8zomoOcyMdnwgdem+Pi8JEqeDYI5yPR32Kam6HnuRr47dTb97CstaepAvXPWQUUHMtjsFQ==}
 
   '@nuxt/hints@1.0.0-alpha.3':
     resolution: {integrity: sha512-p1Rid1Ll9iFIFfoBuSJ4+9qVMCCkCHh0N9pG4M6JifCcz7uSiO37RqmSfEbusFLHbB9yFmzAsRESFC2khxym+A==}
@@ -4378,11 +4390,28 @@ packages:
     resolution: {integrity: sha512-vlaWLyoJrOnCBqycmFo/CA8ZmPzuyJHYmgu261KYKByZ4YLz9sTyHZ4qoHgWSYiDsZXhiLo2XndVMz0WOAyZ8Q==}
     engines: {node: '>=18.12.0'}
 
+  fontaine@0.8.0:
+    resolution: {integrity: sha512-eek1GbzOdWIj9FyQH/emqW1aEdfC3lYRCHepzwlFCm5T77fBSRSyNRKE6/antF1/B1M+SfJXVRQTY9GAr7lnDg==}
+    engines: {node: '>=18.12.0'}
+
   fontkit@2.0.4:
     resolution: {integrity: sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==}
 
+  fontkitten@1.0.3:
+    resolution: {integrity: sha512-Wp1zXWPVUPBmfoa3Cqc9ctaKuzKAV6uLstRqlR56kSjplf5uAce+qeyYym7F+PHbGTk+tCEdkCW6RD7DX/gBZw==}
+    engines: {node: '>=20'}
+
   fontless@0.1.0:
     resolution: {integrity: sha512-KyvRd732HuVd/XP9iEFTb1w8Q01TPSA5GaCJV9HYmPiEs/ZZg/on2YdrQmlKfi9gDGpmN5Bn27Ze/CHqk0vE+w==}
+    engines: {node: '>=18.12.0'}
+    peerDependencies:
+      vite: '*'
+    peerDependenciesMeta:
+      vite:
+        optional: true
+
+  fontless@0.2.1:
+    resolution: {integrity: sha512-mUWZ8w91/mw2KEcZ6gHNoNNmsAq9Wiw2IypIux5lM03nhXm+WSloXGUNuRETNTLqZexMgpt7Aj/v63qqrsWraQ==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       vite: '*'
@@ -6943,6 +6972,9 @@ packages:
   unifont@0.6.0:
     resolution: {integrity: sha512-5Fx50fFQMQL5aeHyWnZX9122sSLckcDvcfFiBf3QYeHa7a1MKJooUy52b67moi2MJYkrfo/TWY+CoLdr/w0tTA==}
 
+  unifont@0.7.4:
+    resolution: {integrity: sha512-oHeis4/xl42HUIeHuNZRGEvxj5AaIKR+bHPNegRq5LV1gdc3jundpONbjglKpihmJf+dswygdMJn3eftGIMemg==}
+
   unimport@4.1.1:
     resolution: {integrity: sha512-j9+fijH6aDd05yv1fXlyt7HSxtOWtGtrZeYTVBsSUg57Iuf+Ps2itIZjeyu7bEQ4k0WOgYhHrdW8m/pJgOpl5g==}
     engines: {node: '>=18.12.0'}
@@ -7789,6 +7821,10 @@ snapshots:
     dependencies:
       fontkit: 2.0.4
 
+  '@capsizecss/unpack@4.0.1':
+    dependencies:
+      fontkitten: 1.0.3
+
   '@clack/core@0.5.0':
     dependencies:
       picocolors: 1.1.1
@@ -8573,6 +8609,14 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
+  '@nuxt/devtools-kit@3.2.4(magicast@0.5.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))':
+    dependencies:
+      '@nuxt/kit': 4.4.5(magicast@0.5.3)
+      execa: 8.0.1
+      vite: 7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0)
+    transitivePeerDependencies:
+      - magicast
+
   '@nuxt/devtools-kit@4.0.0-alpha.3(magicast@0.5.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))':
     dependencies:
       '@nuxt/kit': 4.4.5(magicast@0.5.3)
@@ -8724,6 +8768,46 @@ snapshots:
       unifont: 0.6.0
       unplugin: 2.3.11
       unstorage: 1.17.3(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)
+    transitivePeerDependencies:
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@capacitor/preferences'
+      - '@deno/kv'
+      - '@netlify/blobs'
+      - '@planetscale/database'
+      - '@upstash/redis'
+      - '@vercel/blob'
+      - '@vercel/functions'
+      - '@vercel/kv'
+      - aws4fetch
+      - db0
+      - idb-keyval
+      - ioredis
+      - magicast
+      - uploadthing
+      - vite
+
+  '@nuxt/fonts@0.14.0(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)(magicast@0.5.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))':
+    dependencies:
+      '@nuxt/devtools-kit': 3.2.4(magicast@0.5.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))
+      '@nuxt/kit': 4.4.5(magicast@0.5.3)
+      consola: 3.4.2
+      defu: 6.1.7
+      fontless: 0.2.1(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))
+      h3: 1.15.11
+      magic-regexp: 0.10.0
+      ofetch: 1.5.1
+      pathe: 2.0.3
+      sirv: 3.0.2
+      tinyglobby: 0.2.16
+      ufo: 1.6.4
+      unifont: 0.7.4
+      unplugin: 3.0.0
+      unstorage: 1.17.5(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -12236,6 +12320,16 @@ snapshots:
       ufo: 1.6.1
       unplugin: 2.3.11
 
+  fontaine@0.8.0:
+    dependencies:
+      '@capsizecss/unpack': 4.0.1
+      css-tree: 3.1.0
+      magic-regexp: 0.10.0
+      magic-string: 0.30.21
+      pathe: 2.0.3
+      ufo: 1.6.4
+      unplugin: 2.3.11
+
   fontkit@2.0.4:
     dependencies:
       '@swc/helpers': 0.5.17
@@ -12247,6 +12341,10 @@ snapshots:
       tiny-inflate: 1.0.3
       unicode-properties: 1.4.1
       unicode-trie: 2.0.0
+
+  fontkitten@1.0.3:
+    dependencies:
+      tiny-inflate: 1.0.3
 
   fontless@0.1.0(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0)):
     dependencies:
@@ -12263,6 +12361,44 @@ snapshots:
       ufo: 1.6.1
       unifont: 0.6.0
       unstorage: 1.17.3(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)
+    optionalDependencies:
+      vite: 7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0)
+    transitivePeerDependencies:
+      - '@azure/app-configuration'
+      - '@azure/cosmos'
+      - '@azure/data-tables'
+      - '@azure/identity'
+      - '@azure/keyvault-secrets'
+      - '@azure/storage-blob'
+      - '@capacitor/preferences'
+      - '@deno/kv'
+      - '@netlify/blobs'
+      - '@planetscale/database'
+      - '@upstash/redis'
+      - '@vercel/blob'
+      - '@vercel/functions'
+      - '@vercel/kv'
+      - aws4fetch
+      - db0
+      - idb-keyval
+      - ioredis
+      - uploadthing
+
+  fontless@0.2.1(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0)):
+    dependencies:
+      consola: 3.4.2
+      css-tree: 3.1.0
+      defu: 6.1.7
+      esbuild: 0.27.2
+      fontaine: 0.8.0
+      jiti: 2.7.0
+      lightningcss: 1.32.0
+      magic-string: 0.30.21
+      ohash: 2.0.11
+      pathe: 2.0.3
+      ufo: 1.6.4
+      unifont: 0.7.4
+      unstorage: 1.17.5(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)
     optionalDependencies:
       vite: 7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0)
     transitivePeerDependencies:
@@ -13147,10 +13283,10 @@ snapshots:
     dependencies:
       estree-walker: 3.0.3
       magic-string: 0.30.21
-      mlly: 1.8.0
+      mlly: 1.8.2
       regexp-tree: 0.1.27
       type-level-regexp: 0.1.17
-      ufo: 1.6.1
+      ufo: 1.6.4
       unplugin: 2.3.11
 
   magic-string-ast@1.0.3:
@@ -13900,7 +14036,7 @@ snapshots:
       - vite
       - vue
 
-  nuxt-og-image@6.4.9(@nuxt/schema@4.2.2)(@resvg/resvg-js@2.6.2)(@resvg/resvg-wasm@2.6.2)(@unhead/vue@2.0.19(vue@3.5.26(typescript@5.9.3)))(nuxt@4.2.2(@netlify/blobs@9.1.2)(@parcel/watcher@2.5.6)(@types/node@25.8.0)(@vue/compiler-sfc@3.5.34)(better-sqlite3@12.5.0)(cac@6.7.14)(db0@0.3.4(better-sqlite3@12.5.0))(eslint@9.39.2(jiti@2.6.1))(ioredis@5.10.1)(lightningcss@1.32.0)(magicast@0.5.3)(optionator@0.9.4)(rollup@4.60.4)(terser@5.47.1)(typescript@5.9.3)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))(vue-tsc@3.1.8(typescript@5.9.3))(yaml@2.9.0))(playwright-core@1.57.0)(sharp@0.34.5)(tailwindcss@4.1.18)(unstorage@1.17.5(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1))(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))(vue@3.5.26(typescript@5.9.3))(zod@4.2.1):
+  nuxt-og-image@6.4.9(f6b8eac05a1ae8d623bb543a61e316a1):
     dependencies:
       '@clack/prompts': 1.4.0
       '@nuxt/kit': 4.4.5(magicast@0.5.3)
@@ -13937,9 +14073,11 @@ snapshots:
     optionalDependencies:
       '@resvg/resvg-js': 2.6.2
       '@resvg/resvg-wasm': 2.6.2
+      fontless: 0.2.1(@netlify/blobs@9.1.2)(db0@0.3.4(better-sqlite3@12.5.0))(ioredis@5.10.1)(vite@7.3.3(@types/node@25.8.0)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.47.1)(yaml@2.9.0))
       playwright-core: 1.57.0
       sharp: 0.34.5
       tailwindcss: 4.1.18
+      unifont: 0.7.4
     transitivePeerDependencies:
       - '@nuxt/schema'
       - nuxt
@@ -15712,6 +15850,12 @@ snapshots:
       vfile: 6.0.3
 
   unifont@0.6.0:
+    dependencies:
+      css-tree: 3.1.0
+      ofetch: 1.5.1
+      ohash: 2.0.11
+
+  unifont@0.7.4:
     dependencies:
       css-tree: 3.1.0
       ofetch: 1.5.1
