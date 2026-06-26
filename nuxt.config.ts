@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "nuxt-og-image",
     "motion-v/nuxt",
     "@nuxt/scripts",
+    "nuxt-seo-utils",
     "@nuxt/a11y",
   ],
   components: true,
@@ -75,7 +76,7 @@ export default defineNuxtConfig({
       include: []
     }
   },
-  debug: true,
+  debug: false,
 
   eslint: {
     config: {

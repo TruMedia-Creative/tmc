@@ -67,7 +67,7 @@ cta_after_sections:
       to: https://trumediacreative.hbportal.co/schedule/6442d82d7999d90d3e0b430a
       icon: i-lucide-calendar
     - label: See How We Work
-      to: /#process
+      to: /projects
       variant: subtle
       icon: i-lucide-list-ordered
 #TODO: Update client logos to SVGs where possible, as well as formatting correct dimensions and alt text.
