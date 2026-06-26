@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     "nuxt-og-image",
     "@nuxt/fonts",
     "@nuxt/hints",
-    // "@nuxtjs/seo",
+    "@nuxtjs/seo",
     "nuxt-gtag",
     "motion-v/nuxt",
     "@nuxt/scripts",
