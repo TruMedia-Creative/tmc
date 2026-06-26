@@ -67,6 +67,11 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
+  vite: {
+    optimizeDeps: {
+      include: []
+    }
+  },
   debug: true,
 
   eslint: {
