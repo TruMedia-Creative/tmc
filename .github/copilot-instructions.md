@@ -20,7 +20,7 @@ const { data: page } = await useAsyncData("page-name", () =>
 );
 ```
 
-## Development Workflow
+## Development Workflow 
 
 **Package Management**: Uses `pnpm` (not npm/yarn). Key commands:
 

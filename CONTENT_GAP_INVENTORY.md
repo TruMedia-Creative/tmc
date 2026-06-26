@@ -7,35 +7,35 @@ This inventory groups missing/placeholder items by level and type so each item c
 ## 1) Route-level gaps (page content still placeholder)
 
 ### A. Pages explicitly marked "coming soon"
-- `/home/runner/work/tmc/tmc/app/pages/services/content-creation.vue:6`
-- `/home/runner/work/tmc/tmc/app/pages/resources/blog.vue:5`
-- `/home/runner/work/tmc/tmc/app/pages/resources/case-studies.vue:3-4`
-- `/home/runner/work/tmc/tmc/app/pages/resources/guides.vue:3-4`
-- `/home/runner/work/tmc/tmc/app/pages/resources/media-kit.vue:3-4`
-- `/home/runner/work/tmc/tmc/app/pages/resources/tutorials.vue:3-4`
+- `./app/pages/services/content-creation.vue:6`
+- `./app/pages/resources/blog.vue:5`
+- `./app/pages/resources/case-studies.vue:3-4`
+- `./app/pages/resources/guides.vue:3-4`
+- `./app/pages/resources/media-kit.vue:3-4`
+- `./app/pages/resources/tutorials.vue:3-4`
 
 ### B. Pages still using `ImagePlaceholder` blocks (needs real photos/graphics)
 **Services**
-- `/home/runner/work/tmc/tmc/app/pages/services/marketing-automation.vue:64`
-- `/home/runner/work/tmc/tmc/app/pages/services/seo-and-paid-ads.vue:64`
-- `/home/runner/work/tmc/tmc/app/pages/services/video-growth-engine.vue:105`
+- `./app/pages/services/marketing-automation.vue:64`
+- `./app/pages/services/seo-and-paid-ads.vue:64`
+- `./app/pages/services/video-growth-engine.vue:105`
 
 **Solutions**
-- `/home/runner/work/tmc/tmc/app/pages/solutions/clarify-your-message.vue:46`
-- `/home/runner/work/tmc/tmc/app/pages/solutions/get-more-leads.vue:55`
-- `/home/runner/work/tmc/tmc/app/pages/solutions/keep-customers-longer.vue:55`
-- `/home/runner/work/tmc/tmc/app/pages/solutions/reach-more-buyers.vue:55`
-- `/home/runner/work/tmc/tmc/app/pages/solutions/speed-up-sales.vue:55`
-- `/home/runner/work/tmc/tmc/app/pages/solutions/fix-your-live-stream-and-events.vue:55`
-- `/home/runner/work/tmc/tmc/app/pages/solutions/products/clarity-to-clients-workshop.vue:36`
+- `./app/pages/solutions/clarify-your-message.vue:46`
+- `./app/pages/solutions/get-more-leads.vue:55`
+- `./app/pages/solutions/keep-customers-longer.vue:55`
+- `./app/pages/solutions/reach-more-buyers.vue:55`
+- `./app/pages/solutions/speed-up-sales.vue:55`
+- `./app/pages/solutions/fix-your-live-stream-and-events.vue:55`
+- `./app/pages/solutions/products/clarity-to-clients-workshop.vue:36`
 
 **Industries**
-- `/home/runner/work/tmc/tmc/app/pages/industries/contractors-manufactures.vue:50`
-- `/home/runner/work/tmc/tmc/app/pages/industries/financial-services.vue:50`
-- `/home/runner/work/tmc/tmc/app/pages/industries/food-services.vue:50`
-- `/home/runner/work/tmc/tmc/app/pages/industries/health-and-wellness.vue:50`
-- `/home/runner/work/tmc/tmc/app/pages/industries/live-events-and-entertainment.vue:50`
-- `/home/runner/work/tmc/tmc/app/pages/industries/non-profits.vue:46`
+- `./app/pages/industries/contractors-manufactures.vue:50`
+- `./app/pages/industries/financial-services.vue:50`
+- `./app/pages/industries/food-services.vue:50`
+- `./app/pages/industries/health-and-wellness.vue:50`
+- `./app/pages/industries/live-events-and-entertainment.vue:50`
+- `./app/pages/industries/non-profits.vue:46`
 
 ## 2) Component-level gaps (template placeholders shown when data is absent)
 
