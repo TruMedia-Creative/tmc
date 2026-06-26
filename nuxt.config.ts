@@ -19,11 +19,16 @@ export default defineNuxtConfig({
     "motion-v/nuxt",
     "@nuxt/scripts",
     "nuxt-seo-utils",
+    "nuxt-link-checker",
     "@nuxt/a11y",
   ],
   components: true,
   devtools: {
     enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
   },
   app: {
     head: {
