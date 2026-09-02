@@ -2,7 +2,7 @@
 @import "@nuxt/ui";
 
 @theme static {
-  --font-sans: "new-spirit", sans-serif;
+  --font-sans: "Public Sans", sans-serif;
 
   /* Custom brand color palette */
   --color-brand-50: #eff6ff;

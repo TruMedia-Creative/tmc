@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     "nuxt-gtag",
     'nuxt-ai-ready',
     "nuxt-skew-protection",
-    "nuxt-og-image",
     "motion-v/nuxt",
     "@nuxt/scripts",
     "nuxt-link-checker",
@@ -77,7 +76,18 @@ export default defineNuxtConfig({
   },
   vite: {
     optimizeDeps: {
-      include: []
+      exclude: [
+        "@nuxtjs/mdc > remark-gfm",
+        "@nuxtjs/mdc > remark-emoji",
+        "@nuxtjs/mdc > remark-mdc",
+        "@nuxtjs/mdc > remark-rehype",
+        "@nuxtjs/mdc > rehype-raw",
+        "@nuxtjs/mdc > parse5",
+        "@nuxtjs/mdc > unist-util-visit",
+        "@nuxtjs/mdc > unified",
+        "@nuxtjs/mdc > debug",
+        "@nuxtjs/mdc > extend"
+      ]
     }
   },
   debug: false,
