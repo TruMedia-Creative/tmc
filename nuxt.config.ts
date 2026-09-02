@@ -95,6 +95,9 @@ export default defineNuxtConfig({
       id: "orr3dhh",
     },
   },
+  gtag: {
+    id: "G-G22P0WJNVM",
+  },
   robots: {
     allow: "/",
     disallow: ["/admin", "/private"],
@@ -136,8 +139,5 @@ export default defineNuxtConfig({
       // Other Nuxt SEO modules handle these
       ogImage: "https://www.trumediacreative.com/ogimage.png",
     },
-  },
-  gtag: {
-    id: "G-G22P0WJNVM",
   },
 });
