@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     "nuxt-og-image",
     "motion-v/nuxt",
     "@nuxt/scripts",
-    "nuxt-seo-utils",
     "nuxt-link-checker",
     "@nuxt/a11y",
   ],
@@ -132,15 +131,13 @@ export default defineNuxtConfig({
       // App Info
       applicationName: "TruMedia Creative",
 
-      // Nuxt SEO Utils already sets the below tags for you
-      ogSiteName: "TruMedia Creative",
       ogLocale: "en_US",
-      ogType: "website",
-      ogUrl: "https://trumediacreative.com",
       ogTitle: "TruMedia Creative",
       // Other Nuxt SEO modules handle these
       ogImage: "https://www.trumediacreative.com/ogimage.png",
-      robots: "index, follow",
     },
+  },
+  gtag: {
+    id: "G-G22P0WJNVM",
   },
 });
