@@ -26,7 +26,7 @@ const columns = computed(() => footerData.value?.columns || []);
     <template #left>
       <div class="flex items-center space-x-4">
         <p class="font-semibold text-sm text-white">
-          TruMedia Creative • © {{ new Date().getFullYear() }}
+          TruMedia LLC • TruMedia Creative • © {{ new Date().getFullYear() }}
         </p>
         <UButton
           to="/privacy"
