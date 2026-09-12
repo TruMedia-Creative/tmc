@@ -5,7 +5,7 @@ const { data: page } = await useAsyncData("blog", () =>
   queryCollection("blog").first(),
 );
 const { data: posts } = await useAsyncData(route.path, () =>
-  queryCollection("posts").all(),
+  queryCollection("posts").where("published", "=", true).all(),
 );
 
 const title = page.value?.seo?.title || page.value?.title;
