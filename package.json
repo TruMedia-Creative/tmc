@@ -32,7 +32,7 @@
     "@nuxtjs/seo": "^5.3.14",
     "@resvg/resvg-js": "^2.6.2",
     "@standard-schema/spec": "^1.1.0",
-    "@takumi-rs/core": "2.13.4",
+    "@takumi-rs/core": "2.13.7",
     "@tiptap/core": "3.31.0",
     "@unhead/vue": "^3.4.0",
     "@vueuse/nuxt": "^14.4.0",
