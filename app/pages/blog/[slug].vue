@@ -2,7 +2,10 @@
 const route = useRoute();
 
 const { data: post } = await useAsyncData(route.path, () =>
-  queryCollection("posts").path(route.path).first(),
+  queryCollection("posts")
+    .where("published", "=", true)
+    .path(route.path)
+    .first(),
 );
 if (!post.value) {
   throw createError({
