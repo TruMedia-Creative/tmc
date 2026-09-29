@@ -765,6 +765,7 @@ export const collections = {
         }),
       ),
       date: z.date(),
+      published: z.boolean().default(false),
       noindex: z.boolean().optional(),
       badge: z.object({ label: z.string().nonempty() }),
     }),
