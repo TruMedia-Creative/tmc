@@ -13,7 +13,7 @@ useSchemaOrg([
     description:
       'Strategy, UX, design, development, deployment, and ongoing support for business websites.',
     provider: {
-      '@id': 'https://trumediacreative.com/#organization',
+      '@id': 'https://trumediacreative.com/#identity',
     },
     areaServed: {
       '@type': 'Country',
@@ -31,7 +31,7 @@ useSchemaOrg([
     description:
       'Digital marketing strategy and execution including SEO, paid advertising, content, email marketing, lead generation, and analytics.',
     provider: {
-      '@id': 'https://trumediacreative.com/#organization',
+      '@id': 'https://trumediacreative.com/#identity',
     },
     areaServed: {
       '@type': 'Country',
@@ -49,7 +49,7 @@ useSchemaOrg([
     description:
       'Creative development, production, cinematography, editing, motion graphics, and distribution of video content for businesses and organizations.',
     provider: {
-      '@id': 'https://trumediacreative.com/#organization',
+      '@id': 'https://trumediacreative.com/#identity',
     },
     areaServed: {
       '@type': 'Country',
@@ -67,7 +67,7 @@ useSchemaOrg([
     description:
       'Custom software, web applications, interactive digital experiences, integrations, and technology solutions.',
     provider: {
-      '@id': 'https://trumediacreative.com/#organization',
+      '@id': 'https://trumediacreative.com/#identity',
     },
     areaServed: {
       '@type': 'Country',
