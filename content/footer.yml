@@ -81,7 +81,7 @@ columns:
       - label: Guides
         to: /resources/guides
         icon: i-lucide-book-open
-        disabled: true
+        disabled: false
       - label: Tutorials
         to: /resources/tutorials
         icon: i-lucide-video

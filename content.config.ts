@@ -768,6 +768,12 @@ export const collections = {
       published: z.boolean().default(false),
       noindex: z.boolean().optional(),
       badge: z.object({ label: z.string().nonempty() }),
+      seo: z
+        .object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty(),
+        })
+        .optional(),
     }),
   }),
   resources: defineCollection({

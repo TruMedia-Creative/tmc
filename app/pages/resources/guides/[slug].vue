@@ -1,0 +1,81 @@
+<script setup lang="ts">
+const route = useRoute();
+
+const { data: post } = await useAsyncData(route.path, () =>
+  queryCollection("resources_posts").path(route.path).first(),
+);
+if (!post.value || !post.value.path.startsWith("/resources/guides/")) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Guide not found",
+    fatal: true,
+  });
+}
+
+const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
+  return queryCollectionItemSurroundings("resources_posts", route.path, {
+    fields: ["description"],
+  });
+});
+
+const title = post.value.seo?.title || post.value.title;
+const description = post.value.seo?.description || post.value.description;
+const robots = post.value.noindex ? "noindex, nofollow" : "index, follow";
+
+useSeoMeta({
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description,
+  robots,
+  ogImage: post.value.image?.src,
+});
+</script>
+
+<template>
+  <UContainer v-if="post">
+    <UPageHeader :title="post.title" :description="post.description">
+      <template #headline>
+        <UBadge v-bind="post.badge" variant="subtle" />
+        <span class="text-muted">&middot;</span>
+        <time class="text-muted">{{
+          new Date(post.date).toLocaleDateString("en", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          })
+        }}</time>
+      </template>
+
+      <div class="flex flex-wrap items-center gap-3 mt-4">
+        <UButton
+          v-for="(author, index) in post.authors"
+          :key="index"
+          :to="author.to"
+          color="neutral"
+          variant="subtle"
+          target="_blank"
+          size="sm"
+        >
+          <UAvatar v-bind="author.avatar" alt="Author avatar" size="2xs" />
+
+          {{ author.name }}
+        </UButton>
+      </div>
+    </UPageHeader>
+
+    <UPage>
+      <UPageBody>
+        <ContentRenderer :value="post" />
+
+        <USeparator v-if="surround?.length" />
+
+        <UContentSurround :surround="surround" />
+      </UPageBody>
+
+      <template v-if="post?.body?.toc?.links?.length" #right>
+        <UContentToc :links="post.body.toc.links" />
+      </template>
+    </UPage>
+  </UContainer>
+</template>
