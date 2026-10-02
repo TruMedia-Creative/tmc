@@ -121,13 +121,6 @@ export default defineNuxtConfig({
       },
     ],
   },
-  scripts: {
-    registry: {
-      googleTagManager: {
-        id: "GTM-T6DBWPNS",
-      },
-    },
-  },
   schemaOrg: {
     identity: {
       type: "Organization",
@@ -157,6 +150,13 @@ export default defineNuxtConfig({
         "https://www.linkedin.com/company/trumedia-creative/"
       ],
 
+    },
+  },
+  scripts: {
+    registry: {
+      googleTagManager: {
+        id: "GTM-T6DBWPNS",
+      },
     },
   },
 

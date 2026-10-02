@@ -92,7 +92,8 @@ useSeoMeta({
 <template>
   <div v-if="page?.title">
     <FadeInUp :delay="0.3">
-      <UPageHero :description="page.description" :headline="page.hero.headline" :links="page.hero.links"
+      <UPageHero
+:description="page.description" :headline="page.hero.headline" :links="page.hero.links"
         :orientation="page.hero.orientation">
         <template #title>
           <HomeHeroTitle />
@@ -113,7 +114,8 @@ useSeoMeta({
     </FadeInUp>
 
     <FadeInUp :delay="0.2">
-      <ProcessSteps v-if="page.process" :title="page.process.title" :subtitle="page.process.description"
+      <ProcessSteps
+v-if="page.process" :title="page.process.title" :subtitle="page.process.description"
         :steps="page.process.steps" />
     </FadeInUp>
 
@@ -124,7 +126,8 @@ useSeoMeta({
     </FadeInUp>
 
     <FadeInUp :delay="0.2">
-      <HomeFeatures :title="page.features.title" :description="page.features.description"
+      <HomeFeatures
+:title="page.features.title" :description="page.features.description"
         :items="page.features.items" />
     </FadeInUp>
 
@@ -144,7 +147,8 @@ useSeoMeta({
     </FadeInUp>
 
     <FadeInUp :delay="0.2">
-      <HomeTestimonials :headline="page.testimonials.headline" :title="page.testimonials.title"
+      <HomeTestimonials
+:headline="page.testimonials.headline" :title="page.testimonials.title"
         :description="page.testimonials.description" :items="page.testimonials.items" />
     </FadeInUp>
 
