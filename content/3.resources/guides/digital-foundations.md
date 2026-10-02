@@ -45,6 +45,8 @@ Here is the cleanest way to separate the pieces.
 
 The domain is not the website. The website is not the email. The URL is not the domain. DNS is not a public page. They work together, but each job is different.
 
+If you are thinking about rebuilding the part people actually see, start with our [Website Design](/services/web-design) page. This guide is here to help you understand the foundation underneath it.
+
 ## What is a domain name?
 
 A domain name is the easy-to-read name people use to reach something online.
@@ -125,6 +127,8 @@ But that domain can point to different website platforms over time. Today it mig
 
 Changing the website does not automatically mean changing the domain. Changing the domain does not automatically move the website. They are connected through DNS settings.
 
+That is why a good website project should account for more than design. The site, hosting, forms, analytics, search visibility, and email handoffs all need to be handled carefully. Our [Website Growth System](/services/web-design) is built around that bigger picture.
+
 ## What is DNS?
 
 DNS stands for Domain Name System. Plain English: DNS is the internet's direction system for your domain.
@@ -139,6 +143,8 @@ DNS answers questions like:
 DNS is powerful because one domain can connect several services at once. Your website might be hosted by one company, your email by another, and your scheduling tool by another.
 
 That is also why random DNS changes can break things quickly.
+
+DNS also affects how cleanly your marketing tools connect. If you are running campaigns, tracking conversions, or trying to improve search visibility, our [SEO & Paid Ads](/services/seo-and-paid-ads) service is the more practical next stop.
 
 ## Common DNS records in plain English
 
@@ -199,6 +205,8 @@ Common DMARC policies include:
 - `reject`: suspicious messages may be rejected.
 
 Small businesses should not guess at strict DMARC settings. A responsible provider or technical partner should review who sends email for the business first, because newsletters, invoices, CRMs, and website forms may all send mail.
+
+If your website forms, CRM, nurture emails, or follow-up tools are part of the problem, our [Marketing Automation](/services/marketing-automation) work is designed to help those systems talk to each other without making the business owner become the IT department.
 
 ## What is BIMI?
 
@@ -286,6 +294,14 @@ If you only remember one thing, remember this:
 > Your domain is the name. DNS is the directions. Your website is the destination. Your email has its own route.
 
 When those pieces are documented and the right accounts are protected, your business is much less likely to lose its website, miss email, or get stuck when it is time to change providers.
+
+## Need help sorting this out?
+
+If you are not sure who controls your domain, DNS, website, or business email, you do not have to figure it out alone.
+
+TruMedia Creative can help you map out what you have, spot what is risky, and make a clear plan before anyone starts changing records or moving services. That might mean helping with a website rebuild, untangling access, checking email setup, or simply helping you understand what belongs where.
+
+[Reach out to TruMedia Creative](/contact) and tell us what you are trying to fix. We will help you make sense of it.
 
 ## Sources and further reading
 
