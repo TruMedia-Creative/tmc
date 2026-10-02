@@ -25,9 +25,9 @@ useSeoMeta({
     >
       <template #title>
         <h1 class="text-5xl md:text-7xl font-bold leading-tight">
-          Video-Led
-          <span class="text-primary italic"> Growth Agency</span>
-          for Financial Services Companies.
+          Video Marketing for
+          <span class="text-primary italic"> Financial Services</span>
+          Companies
         </h1>
       </template>
       <!-- <template #top>

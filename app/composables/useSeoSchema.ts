@@ -2,6 +2,7 @@ const siteUrl = "https://www.trumediacreative.com";
 const organizationId = `${siteUrl}/#organization`;
 const websiteId = `${siteUrl}/#website`;
 const homepageImageId = `${siteUrl}/ogimage.png#primary-image`;
+const treeStapleImageId = `${siteUrl}/images/video/tree-staple/tree-staple-hero.png#primary-image`;
 
 export function useSeoSchema() {
   const route = useRoute();
@@ -71,6 +72,12 @@ export function useSeoSchema() {
       width: 1459,
       height: 824,
     }),
+    defineImage({
+      "@id": treeStapleImageId,
+      url: `${siteUrl}/images/video/tree-staple/tree-staple-hero.png`,
+      name: "Tree Staple Product Video Thumbnail",
+      description: "Tree Staple product installation explainer video thumbnail.",
+    }),
     defineService({
       "@id": `${siteUrl}/#web-design`,
       name: "Web Design & Development",
@@ -121,7 +128,11 @@ export function useSeoSchema() {
             : undefined,
         breadcrumb: { "@id": breadcrumbId.value },
         primaryImageOfPage:
-          route.path === "/" ? { "@id": homepageImageId } : undefined,
+          route.path === "/"
+            ? { "@id": homepageImageId }
+            : route.path === "/projects/tree-staple"
+              ? { "@id": treeStapleImageId }
+              : undefined,
       })),
     ),
     defineBreadcrumb(

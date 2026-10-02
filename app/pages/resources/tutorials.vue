@@ -1,3 +1,7 @@
+<script setup lang="ts">
+useSeoMeta({ robots: "noindex, follow" });
+</script>
+
 <template>
   <ComingSoon
     title="Tutorials Coming Soon"

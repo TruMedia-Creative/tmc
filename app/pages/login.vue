@@ -9,6 +9,7 @@ definePageMeta({
 useSeoMeta({
   title: "Login",
   description: "Login to your account to continue",
+  robots: "noindex, follow",
 });
 
 const toast = useToast();

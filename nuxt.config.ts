@@ -56,19 +56,23 @@ export default defineNuxtConfig({
       "TruMedia Creative designs, develops, and delivers creative, digital, and interactive experiences.",
     defaultLocale: "en-US",
   },
-
   runtimeConfig: {
     public: {
       honeyBookFormId: "62f67000c557950007e38acd",
     },
   },
-
   // Optimize module loading
   build: {
     transpile: ["@headlessui/vue"],
   },
   routeRules: {
     "/docs": { redirect: "/docs/getting-started" },
+    "/projects/nourish-to-heal-2": {
+      redirect: {
+        to: "/projects/nourish-to-heal",
+        statusCode: 301,
+      },
+    },
   },
   compatibilityDate: "2024-07-11",
   nitro: {
@@ -211,5 +215,18 @@ export default defineNuxtConfig({
       // Other Nuxt SEO modules handle these
       ogImage: "https://www.trumediacreative.com/ogimage.png",
     },
+  },
+  sitemap: {
+    exclude: [
+      "/coming-soon",
+      "/login",
+      "/projects/nourish-to-heal-2",
+      "/resources/blog",
+      "/resources/case-studies",
+      "/resources/media-kit",
+      "/resources/tutorials",
+      "/services/content-creation",
+      "/signup",
+    ],
   },
 });

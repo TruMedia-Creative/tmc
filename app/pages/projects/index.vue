@@ -1,4 +1,13 @@
 <script setup>
+useSeoMeta({
+  title: "B2B Marketing Projects & Case Studies | TruMedia Creative",
+  description:
+    "Explore TruMedia Creative case studies in B2B video production, web design, lead generation, and growth strategy, with project details and outcomes.",
+  ogTitle: "B2B Marketing Projects & Case Studies | TruMedia Creative",
+  ogDescription:
+    "Explore TruMedia Creative case studies in B2B video production, web design, lead generation, and growth strategy, with project details and outcomes.",
+});
+
 // Additional projects not in ProjectsPortfolio
 const additionalProjects = ref([
   {
@@ -59,7 +68,7 @@ const additionalProjects = ref([
   },
   {
     title: "Meal Prep E-Commerce Case Study: Shopify 2.0 UX and Conversion",
-    to: "/projects/nourish-to-heal-2",
+    to: "/projects/nourish-to-heal",
     thumbnail: "/images/web-design/nourish-to-heal/nourish-to-heal-hero.png",
     tags: [
       "Shopify 2.0 Web Design",
