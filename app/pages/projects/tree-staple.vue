@@ -16,6 +16,11 @@ const project: Project = {
     "Social Cutdowns for Dealers & Sales",
   ],
   heroImage: "/images/video/tree-staple/tree-staple-hero.png",
+  video: {
+    src: "https://player.vimeo.com/video/844682993?badge=0&autopause=0&player_id=0&app_id=58479",
+    poster: "/images/video/tree-staple/tree-staple-hero.png",
+    title: "Tree Staple Product Installation Explainer",
+  },
   challenge:
     "Tree Staple needed a way to demonstrate installation and durability to landscapers, contractors, and municipal buyers without being on-site for every bid.",
   outcomes:
@@ -28,11 +33,19 @@ const project: Project = {
     "Dealer network equipped with ready-to-send clips for outreach and events",
     "Consistent brand polish across long-form explainer and short social edits",
   ],
-  video: {
-    src: "https://player.vimeo.com/video/844682993?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    poster: "/images/video/tree-staple/tree-staple-hero.png",
-  },
 };
+
+useSchemaOrg([
+  defineVideo({
+    "@id": "https://www.trumediacreative.com/projects/tree-staple#tree-staple-video",
+    name: project.video?.title,
+    description: project.description,
+    thumbnailUrl:
+      "https://www.trumediacreative.com/images/video/tree-staple/tree-staple-hero.png",
+    embedUrl: project.video?.src,
+    isFamilyFriendly: true,
+  }),
+]);
 </script>
 
 <template>
