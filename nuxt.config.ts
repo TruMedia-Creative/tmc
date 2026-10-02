@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     "@nuxt/hints",
     "@nuxtjs/seo",
     "nuxt-gtag",
-    'nuxt-ai-ready',
+    "nuxt-ai-ready",
     "nuxt-skew-protection",
     "motion-v/nuxt",
     "@nuxt/scripts",
@@ -52,6 +52,9 @@ export default defineNuxtConfig({
   site: {
     url: "https://trumediacreative.com",
     name: "TruMedia Creative",
+    description:
+      "TruMedia Creative designs, develops, and delivers creative, digital, and interactive experiences.",
+    defaultLocale: "en-US",
   },
 
   runtimeConfig: {
@@ -86,9 +89,9 @@ export default defineNuxtConfig({
         "@nuxtjs/mdc > unist-util-visit",
         "@nuxtjs/mdc > unified",
         "@nuxtjs/mdc > debug",
-        "@nuxtjs/mdc > extend"
-      ]
-    }
+        "@nuxtjs/mdc > extend",
+      ],
+    },
   },
   debug: false,
 
@@ -125,6 +128,38 @@ export default defineNuxtConfig({
       },
     },
   },
+  schemaOrg: {
+    identity: {
+      type: "Organization",
+      name: "TruMedia Creative",
+      url: "https://trumediacreative.com",
+      logo: "https://trumediacreative.com/images/favicon.png",
+      description:
+        "TruMedia Creative is a creative and digital agency that designs, develops, and delivers websites, video, digital marketing, software, interactive experiences, and other creative solutions for businesses and organizations.",
+      email: "hello@trumediacreative.com",
+      telephone: "+1-903-635-0855",
+      address: {
+        streetAddress: "21 Main Street",
+        addressLocality: "Annandale",
+        addressRegion: "NJ",
+        postalCode: "08801",
+        addressCountry: "US",
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'Customer Support',
+        email: 'hello@trumediacreative.com',
+        telephone: '+1-903-635-0855',
+        areaServed: 'US',
+      },
+      
+      sameAs: [
+        "https://www.linkedin.com/company/trumedia-creative/"
+      ],
+
+    },
+  },
+
   seo: {
     meta: {
       // Basic SEO

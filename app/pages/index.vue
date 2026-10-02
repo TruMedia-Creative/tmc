@@ -5,7 +5,82 @@ const { data: page } = await useAsyncData("index", () =>
 
 const title = page.value?.seo?.title || page.value?.title;
 const description = page.value?.seo?.description || page.value?.description;
+useSchemaOrg([
+  defineService({
+    '@id': 'https://trumediacreative.com/#web-design',
+    name: 'Web Design & Development',
+    serviceType: 'Web Design and Development',
+    description:
+      'Strategy, UX, design, development, deployment, and ongoing support for business websites.',
+    provider: {
+      '@id': 'https://trumediacreative.com/#organization',
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'United States',
+    },
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: 'Businesses and organizations',
+    },
+  }),
+  defineService({
+    '@id': 'https://trumediacreative.com/#digital-marketing',
+    name: 'Digital Marketing',
+    serviceType: 'Digital Marketing',
+    description:
+      'Digital marketing strategy and execution including SEO, paid advertising, content, email marketing, lead generation, and analytics.',
+    provider: {
+      '@id': 'https://trumediacreative.com/#organization',
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'United States',
+    },
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: 'Businesses and organizations',
+    },
+  }),
+  defineService({
+    '@id': 'https://trumediacreative.com/#video-production',
+    name: 'Video Production',
+    serviceType: 'Video Production',
+    description:
+      'Creative development, production, cinematography, editing, motion graphics, and distribution of video content for businesses and organizations.',
+    provider: {
+      '@id': 'https://trumediacreative.com/#organization',
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'United States',
+    },
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: 'Businesses and organizations',
+    },
+  }),
+  defineService({
+    '@id': 'https://trumediacreative.com/#software-development',
+    name: 'Software & Interactive Development',
+    serviceType: 'Software Development',
+    description:
+      'Custom software, web applications, interactive digital experiences, integrations, and technology solutions.',
+    provider: {
+      '@id': 'https://trumediacreative.com/#organization',
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'United States',
+    },
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: 'Businesses and organizations',
+    },
 
+  }),
+
+])
 useSeoMeta({
   title,
   ogTitle: title,
@@ -17,12 +92,8 @@ useSeoMeta({
 <template>
   <div v-if="page?.title">
     <FadeInUp :delay="0.3">
-      <UPageHero
-        :description="page.description"
-        :headline="page.hero.headline"
-        :links="page.hero.links"
-        :orientation="page.hero.orientation"
-      >
+      <UPageHero :description="page.description" :headline="page.hero.headline" :links="page.hero.links"
+        :orientation="page.hero.orientation">
         <template #title>
           <HomeHeroTitle />
         </template>
@@ -37,48 +108,29 @@ useSeoMeta({
 
     <FadeInUp v-if="page.cta_after_sections" :delay="0.2">
       <UContainer>
-        <UPageCTA
-          v-bind="page.cta_after_sections"
-          variant="naked"
-          class="py-8"
-        />
+        <UPageCTA v-bind="page.cta_after_sections" variant="naked" class="py-8" />
       </UContainer>
     </FadeInUp>
 
     <FadeInUp :delay="0.2">
-      <ProcessSteps
-        v-if="page.process"
-        :title="page.process.title"
-        :subtitle="page.process.description"
-        :steps="page.process.steps"
-      />
+      <ProcessSteps v-if="page.process" :title="page.process.title" :subtitle="page.process.description"
+        :steps="page.process.steps" />
     </FadeInUp>
 
     <FadeInUp v-if="page.cta_after_process" :delay="0.2">
       <UContainer>
-        <UPageCTA
-          v-bind="page.cta_after_process"
-          variant="naked"
-          class="py-8"
-        />
+        <UPageCTA v-bind="page.cta_after_process" variant="naked" class="py-8" />
       </UContainer>
     </FadeInUp>
 
     <FadeInUp :delay="0.2">
-      <HomeFeatures
-        :title="page.features.title"
-        :description="page.features.description"
-        :items="page.features.items"
-      />
+      <HomeFeatures :title="page.features.title" :description="page.features.description"
+        :items="page.features.items" />
     </FadeInUp>
 
     <FadeInUp v-if="page.cta_after_features" :delay="0.2">
       <UContainer>
-        <UPageCTA
-          v-bind="page.cta_after_features"
-          variant="naked"
-          class="py-8"
-        />
+        <UPageCTA v-bind="page.cta_after_features" variant="naked" class="py-8" />
       </UContainer>
     </FadeInUp>
 
@@ -92,21 +144,13 @@ useSeoMeta({
     </FadeInUp>
 
     <FadeInUp :delay="0.2">
-      <HomeTestimonials
-        :headline="page.testimonials.headline"
-        :title="page.testimonials.title"
-        :description="page.testimonials.description"
-        :items="page.testimonials.items"
-      />
+      <HomeTestimonials :headline="page.testimonials.headline" :title="page.testimonials.title"
+        :description="page.testimonials.description" :items="page.testimonials.items" />
     </FadeInUp>
 
     <FadeInUp v-if="page.cta_after_testimonials" :delay="0.2">
       <UContainer>
-        <UPageCTA
-          v-bind="page.cta_after_testimonials"
-          variant="naked"
-          class="py-8"
-        />
+        <UPageCTA v-bind="page.cta_after_testimonials" variant="naked" class="py-8" />
       </UContainer>
     </FadeInUp>
 
@@ -120,10 +164,7 @@ useSeoMeta({
   </div>
   <div v-else class="flex items-center justify-center min-h-screen">
     <div class="text-center">
-      <UIcon
-        name="i-lucide-loader-circle"
-        class="w-12 h-12 animate-spin mx-auto mb-4 text-primary"
-      />
+      <UIcon name="i-lucide-loader-circle" class="w-12 h-12 animate-spin mx-auto mb-4 text-primary" />
       <p class="text-muted">Loading content...</p>
     </div>
   </div>
