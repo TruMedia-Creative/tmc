@@ -13,6 +13,10 @@ interface Project2 {
   outcomes?: string;
   solution?: string;
   results?: string[];
+  video?: {
+    src: string;
+    title?: string;
+  };
 }
 
 const props = defineProps<{ project: Project2 }>();
@@ -40,6 +44,21 @@ const props = defineProps<{ project: Project2 }>();
       <p class="max-w-xl text-lg text-slate-600 sm:text-xl">
         {{ props.project.description }}
       </p>
+    </div>
+
+    <div v-if="props.project.video" class="space-y-3">
+      <h2 class="text-lg font-semibold text-slate-900">
+        {{ props.project.video.title || "Project video" }}
+      </h2>
+      <div class="aspect-video overflow-hidden rounded-2xl shadow-xl">
+        <iframe
+          :src="props.project.video.src"
+          :title="props.project.video.title || 'Project video'"
+          class="h-full w-full"
+          allow="fullscreen; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
     </div>
 
     <div class="flex flex-wrap gap-3">

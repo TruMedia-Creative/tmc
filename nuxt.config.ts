@@ -50,25 +50,29 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/main.css"],
   site: {
-    url: "https://trumediacreative.com",
+    url: "https://www.trumediacreative.com",
     name: "TruMedia Creative",
     description:
       "TruMedia Creative designs, develops, and delivers creative, digital, and interactive experiences.",
     defaultLocale: "en-US",
   },
-
   runtimeConfig: {
     public: {
       honeyBookFormId: "62f67000c557950007e38acd",
     },
   },
-
   // Optimize module loading
   build: {
     transpile: ["@headlessui/vue"],
   },
   routeRules: {
     "/docs": { redirect: "/docs/getting-started" },
+    "/projects/nourish-to-heal-2": {
+      redirect: {
+        to: "/projects/nourish-to-heal",
+        statusCode: 301,
+      },
+    },
   },
   compatibilityDate: "2024-07-11",
   nitro: {
@@ -123,10 +127,11 @@ export default defineNuxtConfig({
   },
   schemaOrg: {
     identity: {
+      "@id": "https://www.trumediacreative.com/#organization",
       type: "Organization",
       name: "TruMedia Creative",
-      url: "https://trumediacreative.com",
-      logo: "https://trumediacreative.com/images/favicon.png",
+      url: "https://www.trumediacreative.com",
+      logo: "https://www.trumediacreative.com/icon-512x512.png",
       description:
         "TruMedia Creative is a creative and digital agency that designs, develops, and delivers websites, video, digital marketing, software, interactive experiences, and other creative solutions for businesses and organizations.",
       email: "hello@trumediacreative.com",
@@ -139,17 +144,43 @@ export default defineNuxtConfig({
         addressCountry: "US",
       },
       contactPoint: {
-        '@type': 'ContactPoint',
-        contactType: 'Customer Support',
-        email: 'hello@trumediacreative.com',
-        telephone: '+1-903-635-0855',
-        areaServed: 'US',
+        "@type": "ContactPoint",
+        contactType: "sales",
+        email: "hello@trumediacreative.com",
+        telephone: "+1-903-635-0855",
+        areaServed: "US",
+        availableLanguage: "English",
       },
-      
-      sameAs: [
-        "https://www.linkedin.com/company/trumedia-creative/"
-      ],
 
+      sameAs: [
+        "https://www.linkedin.com/company/trumedia-creative/",
+      ],
+      makesOffer: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@id": "https://www.trumediacreative.com/#web-design",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@id": "https://www.trumediacreative.com/#video-marketing",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@id": "https://www.trumediacreative.com/#digital-marketing",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@id": "https://www.trumediacreative.com/#outbound-marketing",
+          },
+        },
+      ],
     },
   },
   scripts: {
@@ -168,7 +199,7 @@ export default defineNuxtConfig({
       author: "Larryon Truman",
       title:
         "TruMedia Creative | Video-Led Growth for B2B & Expert-Led Companies",
-      titleTemplate: "%s · TruMedia Creative",
+      titleTemplate: "%s",
       // Theme & Color
       themeColor: [
         { content: "#18181b", media: "(prefers-color-scheme: dark)" },
@@ -184,5 +215,18 @@ export default defineNuxtConfig({
       // Other Nuxt SEO modules handle these
       ogImage: "https://www.trumediacreative.com/ogimage.png",
     },
+  },
+  sitemap: {
+    exclude: [
+      "/coming-soon",
+      "/login",
+      "/projects/nourish-to-heal-2",
+      "/resources/blog",
+      "/resources/case-studies",
+      "/resources/media-kit",
+      "/resources/tutorials",
+      "/services/content-creation",
+      "/signup",
+    ],
   },
 });

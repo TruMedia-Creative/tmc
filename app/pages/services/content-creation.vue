@@ -1,3 +1,7 @@
+<script setup lang="ts">
+useSeoMeta({ robots: "noindex, follow" });
+</script>
+
 <template>
   <main class="prose mx-auto py-16">
     <BackToIndexButton />

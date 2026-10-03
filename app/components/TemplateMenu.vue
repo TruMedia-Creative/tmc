@@ -20,7 +20,7 @@
       },
       {
         label: 'Video',
-        to: '/video-growth-engine',
+        to: '/services/video-growth-engine',
       },
       {
         label: 'Dashboard',

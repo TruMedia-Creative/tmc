@@ -4,6 +4,10 @@ const colorMode = useColorMode();
 const color = computed(() =>
   colorMode.value === "dark" ? "#021218" : "white",
 );
+const route = useRoute();
+const canonicalUrl = computed(
+  () => new URL(route.path, "https://www.trumediacreative.com").href,
+);
 
 useHead({
   meta: [
@@ -17,12 +21,15 @@ useHead({
   },
 });
 
+useSeoSchema();
+
 useSeoMeta({
   title: "TruMedia Creative | Video-Led Growth for B2B & Expert-Led Companies",
-  titleTemplate: "%s · TruMedia Creative",
+  titleTemplate: "%s",
   ogSiteName: "TruMedia Creative",
-  ogImage: "/ogimage.png",
-  twitterImage: "/ogimage.png",
+  ogImage: "https://www.trumediacreative.com/ogimage.png",
+  ogUrl: canonicalUrl,
+  twitterImage: "https://www.trumediacreative.com/ogimage.png",
   twitterCard: "summary_large_image",
   ogType: "website",
 });
@@ -56,9 +63,13 @@ const links = [
   {
     label: "Video Growth Engine ",
     icon: "i-lucide-building-warehouse",
-    to: "/video-growth-engine",
+    to: "/services/video-growth-engine",
   },
-  { label: "Industrial", icon: "i-lucide-factory", to: "/industrial" },
+  {
+    label: "Industrial",
+    icon: "i-lucide-factory",
+    to: "/industries/contractors-manufactures",
+  },
   {
     label: "Blog",
     icon: "i-lucide-pencil",

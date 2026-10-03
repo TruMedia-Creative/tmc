@@ -2,6 +2,7 @@
 useSeoMeta({
   title: "Coming Soon",
   description: "A preview of the next TruMedia Creative experience.",
+  robots: "noindex, follow",
 });
 
 definePageMeta({

@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import { reactive, ref, computed } from "vue";
 
+useSeoMeta({
+  title: "B2B Offer Creator | TruMedia Creative",
+  description:
+    "Build a clearer B2B offer with this guided tool for defining buyer problems, outcomes, and deliverables.",
+  ogTitle: "B2B Offer Creator | TruMedia Creative",
+  ogDescription:
+    "Build a clearer B2B offer with this guided tool for defining buyer problems, outcomes, and deliverables.",
+});
+
 const form = reactive({
   useWeLanguage: false,
   packageName: "Outbound Growth Engine",

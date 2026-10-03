@@ -2,6 +2,23 @@
 import type { Project } from "~/types/project";
 
 const props = defineProps<{ project: Project }>();
+const title = computed(() => `${props.project.title} | TruMedia Creative`);
+const description = computed(() => props.project.description);
+const image = computed(() =>
+  new URL(
+    props.project.heroImage || "/ogimage.png",
+    "https://www.trumediacreative.com",
+  ).href,
+);
+
+useSeoMeta({
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
+  ogImage: image,
+  twitterImage: image,
+});
 </script>
 
 <template>
