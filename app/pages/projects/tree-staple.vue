@@ -35,17 +35,6 @@ const project: Project = {
   ],
 };
 
-useSchemaOrg([
-  defineVideo({
-    "@id": "https://www.trumediacreative.com/projects/tree-staple#tree-staple-video",
-    name: project.video?.title,
-    description: project.description,
-    thumbnailUrl:
-      "https://www.trumediacreative.com/images/video/tree-staple/tree-staple-hero.png",
-    embedUrl: project.video?.src,
-    isFamilyFriendly: true,
-  }),
-]);
 </script>
 
 <template>
