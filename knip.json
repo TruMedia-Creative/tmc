@@ -1,0 +1,14 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": [
+    "app/components/**/*.vue",
+    "app/composables/**/*.{ts,js}"
+  ],
+  "ignore": [
+    "content.config.ts"
+  ],
+  "ignoreDependencies": [
+    "@iconify-json/lucide",
+    "@iconify-json/simple-icons"
+  ]
+}
