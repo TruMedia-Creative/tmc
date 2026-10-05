@@ -794,31 +794,23 @@ Typical assets:
 
 ---
 
-# 15. TruMedia Method
+# 15. Method and Process Guidance
 
-When explaining how TruMedia works, the process should feel simple, useful, and grounded in business outcomes.
+When explaining how TruMedia works, do not present a named or fixed process unless Lar has confirmed it as an approved offer or source-of-truth method.
 
-A general framework is:
+Scope and process vary by engagement. The supported description is that TruMedia combines the capabilities documented in the canonical positioning and service-menu notes: messaging strategy, video production, website/content systems, lead generation, and reporting where appropriate.
 
-### 1. Clarify
+### Supported capability areas
 
-Define the audience, problem, offer, message, proof, and conversion path.
+- messaging strategy that clarifies the customer's audience, problem, offer, proof, and sales narrative
+- video production and proof assets that support trust, sales, marketing, recruiting, and explanation
+- website strategy, content, service pages, case studies, and conversion paths that make the business easier to understand and act on
+- practical lead-generation support through paid ads, outbound growth, landing pages, follow-up workflows, and lead qualification when scoped
+- analytics and reporting that provide basic visibility into marketing and sales activity when relevant
 
-### 2. Capture
+Do not imply that every client needs every service, follows the same package, receives the same timeline, or moves through a universal branded sequence.
 
-Create proof assets through video, interviews, case studies, website content, and sales-ready collateral.
-
-### 3. Convert
-
-Build pages, campaigns, CTAs, follow-up systems, and lead paths that help the right buyers take the next step.
-
-### 4. Continue
-
-Use content, SEO, outbound, paid ads, reporting, and review rhythms to create consistency over time.
-
-Exact process language may change by service.
-
-Do not imply that every client needs every service or follows the same package.
+Source discipline note: method naming requires an approved source or owner confirmation before publication. If a process name is not present in the canonical source materials or confirmed by Lar, describe the relevant capabilities plainly instead.
 
 ---
 
@@ -908,7 +900,7 @@ CTAs should be specific, low-friction, and tied to the buyer's stage.
 
 Use direct CTAs when the visitor is likely ready to talk.
 
-Use educational CTAs when the visitor needs to understand the method first.
+Use educational CTAs when the visitor needs to understand the approach first.
 
 Avoid vague CTAs such as:
 
@@ -1416,9 +1408,9 @@ These concepts should remain consistent throughout the website.
 
 ## TruMedia Role
 
-**Clarify the message, capture the proof, and build practical systems that support sales and lead generation.**
+**Help industrial and B2B companies improve messaging, proof assets, website/content systems, and practical lead-generation support.**
 
-## Method
+## Capability Mix
 
 **Messaging + Video + Website/Content Systems + Lead Generation + Sales Awareness**
 
