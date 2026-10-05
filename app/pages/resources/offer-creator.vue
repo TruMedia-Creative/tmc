@@ -114,8 +114,11 @@ const validateField = (fieldName: string, value: string): string => {
   // Numeric price validation
   if (priceFields.includes(fieldName as (typeof priceFields)[number])) {
     if (value && value.trim() !== "") {
-      const numValue = parseFloat(value);
-      if (isNaN(numValue) || numValue < 0) {
+      const trimmedValue = value.trim();
+      const isStrictNumeric = /^\d+(\.\d+)?$/.test(trimmedValue);
+      const numValue = Number(trimmedValue);
+
+      if (!isStrictNumeric || !Number.isFinite(numValue) || numValue <= 0) {
         return "Please enter a valid positive number";
       }
     }

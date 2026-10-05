@@ -298,6 +298,7 @@ const hasActiveFilters = computed(() => {
               <img
                 v-if="project.thumbnail"
                 :src="project.thumbnail"
+                :alt="project.title"
                 class="rounded-xl w-full h-56 object-cover object-top shadow-lg drop-shadow-lg group-hover:shadow-xl group-hover:drop-shadow-xl transition-all duration-300"
               />
               <div

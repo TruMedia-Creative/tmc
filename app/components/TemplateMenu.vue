@@ -12,7 +12,7 @@
       },
       {
         label: 'Offer Creator',
-        to: '/offer-creator',
+        to: '/resources/offer-creator',
       },
       {
         label: 'Docs',
