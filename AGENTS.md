@@ -1,10 +1,10 @@
 # TruMedia Creative
 
-## project
+## Project
 
 Nuxt 4 marketing website for TruMedia Creative. It uses Vue, TypeScript, Nuxt UI, Nuxt Content, and pnpm. Run all commands from the repository root.
 
-## commands
+## Commands
 
 - `pnpm bootstrap` — install dependencies with the frozen lockfile
 - `pnpm dev` — start the site at `http://localhost:3010`
@@ -13,7 +13,7 @@ Nuxt 4 marketing website for TruMedia Creative. It uses Vue, TypeScript, Nuxt UI
 - `pnpm build` — create a production build
 - `pnpm generate` — generate the static site
 
-## repository structure
+## Repository structure
 
 - `app/pages/` — file-based routes
 - `app/components/` — shared and feature-specific Vue components
@@ -24,7 +24,7 @@ Nuxt 4 marketing website for TruMedia Creative. It uses Vue, TypeScript, Nuxt UI
 - `nuxt.config.ts` — modules, runtime configuration, SEO, and route rules
 - `docs/` — architecture, workflow, positioning, and decision records
 
-## rules
+## Rules
 
 - Use pnpm via Corepack; do not introduce npm or Yarn lockfiles.
 - Prefer content in `content/` over hardcoded page copy, and update `content.config.ts` when content shape changes.
@@ -32,7 +32,7 @@ Nuxt 4 marketing website for TruMedia Creative. It uses Vue, TypeScript, Nuxt UI
 - Do not invent claims, metrics, testimonials, client results, contact details, or brand positioning.
 - Keep changes scoped and preserve unrelated work.
 
-## architecture
+## Architecture
 
 Read:
 
@@ -51,7 +51,7 @@ Read:
 - `BRAND.md`
 - `docs/tmc-docs/positioning.md`
 
-## before completing work
+## Before completing work
 
 Run the checks appropriate to the change:
 
