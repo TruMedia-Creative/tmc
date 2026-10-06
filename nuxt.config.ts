@@ -128,20 +128,33 @@ export default defineNuxtConfig({
   schemaOrg: {
     identity: {
       "@id": "https://www.trumediacreative.com/#organization",
-      type: "Organization",
+      type: "LocalBusiness",
       name: "TruMedia Creative",
       url: "https://www.trumediacreative.com",
+      image: "https://www.trumediacreative.com/ogimage.png",
       logo: "https://www.trumediacreative.com/icon-512x512.png",
       description:
         "TruMedia Creative is a creative and digital agency that designs, develops, and delivers websites, video, digital marketing, software, interactive experiences, and other creative solutions for businesses and organizations.",
       email: "hello@trumediacreative.com",
       telephone: "+1-903-635-0855",
       address: {
-        streetAddress: "21 Main Street",
+        streetAddress: "21 Main St",
         addressLocality: "Annandale",
         addressRegion: "NJ",
         postalCode: "08801",
         addressCountry: "US",
+      },
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+        ],
+        opens: "08:00",
+        closes: "16:00",
       },
       contactPoint: {
         "@type": "ContactPoint",
