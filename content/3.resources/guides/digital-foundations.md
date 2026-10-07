@@ -7,7 +7,7 @@ seo:
 image:
   src: /images/services/website-growth-system/website-system-included.png
 authors:
-  - name: Lar
+  - name: Larryon Truman
     to: https://www.linkedin.com/in/larryontrumanii
     avatar:
       src: /images/who-we-are-photos/Lar-headshot.png
