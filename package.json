@@ -34,7 +34,7 @@
     "@resvg/resvg-js": "^2.6.2",
     "@standard-schema/spec": "^1.1.0",
     "@takumi-rs/core": "2.13.7",
-    "@tiptap/core": "3.31.0",
+    "@tiptap/core": "3.31.4",
     "@unhead/vue": "^3.4.2",
     "@vueuse/nuxt": "^14.4.0",
     "better-sqlite3": "^13.0.3",
