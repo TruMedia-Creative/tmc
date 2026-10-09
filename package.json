@@ -45,7 +45,7 @@
     "nuxt-gtag": "5.0.0",
     "nuxt-link-checker": "^5.3.0",
     "nuxt-skew-protection": "^1.6.2",
-    "satori": "^0.33.5",
+    "satori": "^0.35.0",
     "unhead": "^3.4.2",
     "unstorage": "^1.17.5",
     "zod": "^4.6.5"
