@@ -1,5 +1,7 @@
 <script setup>
 // Temporary static data to test the page layout
+// TODO: Add alt text to the images that get used as it's lowering the accessibility of the page.
+
 const projects = ref([
   {
     _path: "/projects/pjpolke",
@@ -88,6 +90,7 @@ const projects = ref([
             <img
               v-if="project.thumbnail"
               :src="project.thumbnail"
+              :alt="project.title"
               class="rounded-xl w-full h-56 object-cover object-top shadow-lg drop-shadow-lg group-hover:shadow-xl group-hover:drop-shadow-xl transition-all duration-300"
             />
             <div
