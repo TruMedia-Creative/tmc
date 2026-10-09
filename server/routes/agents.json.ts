@@ -1,27 +1,87 @@
-// import { getPublicRoutes } from "../../lib/content/schema";
+import { queryCollection } from "@nuxt/content/server";
 
-// export default defineEventHandler(async event => {
-  // const { siteCopy, blogPosts } = await queryRepositoryContent(event);
-  // const publicPages = [
-    // ...getPublicRoutes(siteCopy),
-    // ...(blogPosts.length
-    //   ? [siteCopy.blog.path, ...blogPosts.map(post => `/blog/${post.slug}`)]
-    //   : []),
-  // ];
+const publicPages = [
+  "/",
+  "/who-we-are",
+  "/services",
+  "/services/content-creation",
+  "/services/marketing-automation",
+  "/services/outreach-engine",
+  "/services/seo-and-paid-ads",
+  "/services/video-growth-engine",
+  "/services/web-design",
+  "/services/web-design/comparison",
+  "/solutions",
+  "/solutions/clarify-your-message",
+  "/solutions/fix-your-live-stream-and-events",
+  "/solutions/get-more-leads",
+  "/solutions/keep-customers-longer",
+  "/solutions/reach-more-buyers",
+  "/solutions/speed-up-sales",
+  "/solutions/products/clarity-to-clients-workshop",
+  "/industries",
+  "/industries/contractors-manufactures",
+  "/industries/financial-services",
+  "/industries/food-services",
+  "/industries/health-and-wellness",
+  "/industries/live-events-and-entertainment",
+  "/industries/non-profits",
+  "/projects",
+  "/projects/advanced-snow-management",
+  "/projects/bidchip",
+  "/projects/church/spruce-run-lutheran",
+  "/projects/cut-artisan-hair-design",
+  "/projects/fiddlers-elbow-country-club",
+  "/projects/ici-consulting",
+  "/projects/nascar-cody-ware",
+  "/projects/nourish-to-heal",
+  "/projects/olivet-baptist-church",
+  "/projects/pinetar",
+  "/projects/pjpolke",
+  "/projects/resurgent",
+  "/projects/shore-christian",
+  "/projects/south-ridge-cc",
+  "/projects/tree-staple",
+  "/projects/zero-surge",
+  "/pricing",
+  "/resources",
+  "/resources/blog",
+  "/resources/case-studies",
+  "/resources/guides",
+  "/resources/media-kit",
+  "/resources/offer-creator",
+  "/resources/tutorials",
+  "/blog",
+  "/changelog",
+  "/contact",
+  "/privacy",
+  "/docs/getting-started",
+];
 
-  // return {
-  //   version: "1.0",
-  //   name: "Miranda Law Website",
-  //   description: siteCopy.site.description,
-  //   url: siteCopy.site.url,
-  //   languages: ["en", "es", "pt"],
-  //   contact: {
-  //     telephone: siteCopy.site.contact.phoneHref,
-  //     email: siteCopy.site.contact.email,
-  //   },
-  //   publicPages,
-  //   tools: [],
-  //   notice:
-  //     "Website information is general and does not create an attorney-client relationship. No public agent or legal-advice API is offered.",
-  // };
-// });
+export default defineEventHandler(async event => {
+  const [blogPosts, resourcePosts] = await Promise.all([
+    queryCollection(event, "posts").where("published", "=", true).all(),
+    queryCollection(event, "resources_posts").all(),
+  ]);
+
+  return {
+    version: "1.0",
+    name: "TruMedia Creative Website",
+    description:
+      "TruMedia Creative designs, develops, and delivers creative, digital, and interactive experiences.",
+    url: "https://www.trumediacreative.com",
+    languages: ["en"],
+    contact: {
+      telephone: "+1-903-635-0855",
+      email: "hello@trumediacreative.com",
+    },
+    publicPages: [
+      ...publicPages,
+      ...blogPosts.map(post => post.path),
+      ...resourcePosts.map(post => post.path),
+    ],
+    tools: [],
+    notice:
+      "Website information is general information. No public agent or automated advice API is offered.",
+  };
+});
