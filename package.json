@@ -37,7 +37,7 @@
     "@tiptap/core": "3.31.4",
     "@tiptap/pm": "3.31.4",
     "@unhead/vue": "^3.4.2",
-    "@vueuse/nuxt": "^14.4.0",
+    "@vueuse/nuxt": "^15.0.0",
     "better-sqlite3": "^13.0.3",
     "motion-v": "^2.6.0",
     "nuxt": "^4.6.0",
