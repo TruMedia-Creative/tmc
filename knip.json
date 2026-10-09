@@ -5,7 +5,8 @@
     "app/composables/**/*.{ts,js}"
   ],
   "ignore": [
-    "content.config.ts"
+    "content.config.ts",
+    ".agents/skills/**/*"
   ],
   "ignoreDependencies": [
     "@iconify-json/lucide",
