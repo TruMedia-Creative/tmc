@@ -19,7 +19,12 @@ Client logos are now managed through a content collection in `content/client-log
 
 ### Schema
 
-Each logo has the following properties:
+`client-logos.yml` is a YAML object with:
+
+- `title` (required): Heading displayed above the logo section
+- `logos` (required): Array of logo entries
+
+Each item in `logos` has the following properties:
 
 - `name` (required): Display name of the client
 - `logo` (required): Path to the logo image file
@@ -32,53 +37,67 @@ Each logo has the following properties:
 #### Basic Logo (No Link)
 
 ```yaml
-- name: Chick-fil-A
-  logo: /images/clients/chickfila.png
-  alt: Chick-fil-A
-  enabled: true
+title: Who We've Partnered with and Served
+logos:
+  - name: Chick-fil-A
+    logo: /images/clients/chickfila.png
+    alt: Chick-fil-A
+    enabled: true
 ```
 
 #### Logo with Link
 
 ```yaml
-- name: Amazon
-  logo: /images/clients/amazon.png
-  alt: Amazon
-  link: https://www.amazon.com
-  enabled: true
+title: Who We've Partnered with and Served
+logos:
+  - name: Amazon
+    logo: /images/clients/amazon.png
+    alt: Amazon
+    link: https://www.amazon.com
+    enabled: true
 ```
 
 #### Disabled Logo
 
 ```yaml
-- name: AutoDrill
-  logo: /images/clients/autodrill.png
-  alt: AutoDrill
-  enabled: false
+title: Who We've Partnered with and Served
+logos:
+  - name: AutoDrill
+    logo: /images/clients/autodrill.png
+    alt: AutoDrill
+    enabled: false
 ```
 
 ## Adding a New Logo
 
 1. Add the logo image to `/public/images/clients/`
-2. Add a new entry to `content/client-logos.yml`:
+2. Add a new entry under the `logos` list in `content/client-logos.yml`:
 
 ```yaml
-- name: New Client
-  logo: /images/clients/new-client.png
-  alt: New Client Company Name
-  link: https://www.newclient.com # Optional
-  enabled: true
+title: Who We've Partnered with and Served
+logos:
+  - name: Existing Client
+    logo: /images/clients/existing-client.png
+    alt: Existing Client
+    enabled: true
+  - name: New Client
+    logo: /images/clients/new-client.png
+    alt: New Client Company Name
+    link: https://www.newclient.com # Optional
+    enabled: true
 ```
 
 ## Disabling a Logo
 
-To temporarily hide a logo without deleting it, set `enabled: false`:
+To temporarily hide a logo without deleting it, set `enabled: false` on that item in `logos`:
 
 ```yaml
-- name: Client Name
-  logo: /images/clients/client.png
-  alt: Client Name
-  enabled: false
+title: Who We've Partnered with and Served
+logos:
+  - name: Client Name
+    logo: /images/clients/client.png
+    alt: Client Name
+    enabled: false
 ```
 
 ## Changing the Title
