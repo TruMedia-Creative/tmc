@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData(() =>
+const { data: page } = await useAsyncData("contractors-manufactures-page", () =>
   queryCollection("contractorsmanufactures").first(),
 );
 

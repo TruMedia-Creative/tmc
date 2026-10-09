@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nuxt dev --port 3010",
+    "dev": "nuxt dev --port 3020",
     "fix": "pnpm run format:fix && pnpm run lint --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",

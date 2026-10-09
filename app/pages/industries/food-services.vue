@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData(() =>
-  queryCollection("foodservices").first(),
+const { data: page } = await useAsyncData(
+  "food-services-page",
+  () => queryCollection("foodservices").first(),
 );
 
 const title = page.value?.seo?.title || page.value?.title;
