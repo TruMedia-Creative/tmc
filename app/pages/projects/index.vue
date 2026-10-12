@@ -13,7 +13,7 @@ const additionalProjects = ref([
   {
     title: "Ballroom Lighting Design for a Luxury Country Club Event Space",
     to: "/projects/fiddlers-elbow-country-club",
-    thumbnail: "/images/projects/thumbnails/fiddlers-elbow-ballroom.jpg",
+    thumbnail: "/images/projects/fiddlers-elbow/fiddlers-elbow-hero.svg",
     tags: ["AV Design", "AV Install"],
     client_type: "Venue",
     year: 2023,
@@ -81,7 +81,7 @@ const additionalProjects = ref([
   {
     title: "Live Production and Media Systems for a Modern Church Campus",
     to: "/projects/south-ridge-cc",
-    thumbnail: "/images/projects/thumbnails/south-ridge-cc.jpg",
+    thumbnail: "/images/projects/south-ridge-cc/south-ridge-cc-hero.svg",
     tags: ["Live Streaming", "AV Design", "AV Installation"],
     client_type: "House of Worship",
     year: 2024,
@@ -89,7 +89,7 @@ const additionalProjects = ref([
   {
     title: "Livestream and Worship Production Systems for a Growing Church",
     to: "/projects/shore-christian",
-    thumbnail: "/images/projects/thumbnails/shore-christian.jpg",
+    thumbnail: "/images/projects/shore-christian/shore-christian-hero.svg",
     tags: ["Live Streaming", "AV Design", "AV Installation"],
     client_type: "House of Worship",
     year: 2024,
@@ -97,7 +97,7 @@ const additionalProjects = ref([
   {
     title: "Sanctuary Audio and Media Upgrades for a Historic Church",
     to: "/projects/olivet-baptist-church",
-    thumbnail: "/images/projects/thumbnails/olivet-baptist.jpg",
+    thumbnail: "/images/projects/olivet-baptist-church/olivet-baptist-church-hero.svg",
     tags: ["Live Streaming", "AV Design", "AV Installation"],
     client_type: "House of Worship",
     year: 2023,
@@ -105,7 +105,7 @@ const additionalProjects = ref([
   {
     title: "Portable Worship and Livestream Systems for a Church Plant",
     to: "/projects/resurgent",
-    thumbnail: "/images/projects/thumbnails/resurgent.jpg",
+    thumbnail: "/images/projects/resurgent/resurgent-hero.svg",
     tags: ["Live Streaming", "AV Design", "AV Installation"],
     client_type: "House of Worship",
     year: 2024,
@@ -113,7 +113,8 @@ const additionalProjects = ref([
   {
     title: "Simple Post-Covid Streaming Solution for Local Church",
     to: "/projects/church/spruce-run-lutheran",
-    thumbnail: "/images/projects/thumbnails/spruce-run-lutheran.jpg",
+    thumbnail:
+      "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72ujohEdyAFNs9JpEivpcLhfEo6s9ZTK_vuMPvVo6TJM21f_Y_Df0RRmjXihTAhQgVTpxkr1TWW_N2oHswRkd4oX8S1IqDuC80QhrfKQU_xNJBYtc0TMmoydP7i1k0lFFhHpyAiajWnwcIzbOX73CEIIxFlHMu7MQQFrGMs_-9Qj3cz3VA0vc42Zl6ZVOc4=w1280",
     tags: ["Live Streaming", "AV Design", "AV Installation"],
     client_type: "House of Worship",
     year: 2023,

@@ -8,6 +8,9 @@ const project: Project = {
     "Outbound strategy, messaging, and sales enablement for a financial consulting firm serving banks and credit unions.",
   year: 2024,
   client: "ICI Consulting",
+  // Reuse the existing project listing photo until a dedicated hero image is available.
+  heroImage: "/images/projects/thumbnails/ici-consulting.jpg",
+  heroImageAlt: "Glass office buildings viewed from below",
   services: [
     "Outbound Strategy & Campaign Design",
     "ICP Definition & Account Targeting",

@@ -14,7 +14,8 @@ const project: Project = {
     "Audio System Integration",
     "Volunteer Training",
   ],
-  heroImage: "/images/projects/olivet-baptist-hero.jpg",
+  heroImage: "/images/projects/olivet-baptist-church/olivet-baptist-church-hero.svg",
+  heroImageAlt: "Illustration of a church worship media setup",
   websiteUrl: "https://www.olivetbaptistpaducah.com",
   challenge:
     "Olivet Baptist Church needed a comprehensive upgrade to their worship production capabilities. With a growing online audience and the desire to enhance both in-person and digital worship experiences, they faced several technical challenges. Their existing audio system couldn't support modern streaming requirements, volunteers struggled with inconsistent sound quality, and the lack of proper monitoring made it difficult for worship team members to hear themselves and stay in sync.",

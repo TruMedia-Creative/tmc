@@ -8,8 +8,10 @@ const project: Project = {
   year: 2023,
   client: "Spruce Run Lutheran Church",
   services: ["Live Streaming", "AV Design", "AV Installation"],
+  // Temporary public image from the church's official website; see the source note in this folder.
   heroImage:
-    "/images/projects/spruce-run-lutheran/spruce-run-lutheran-hero.png",
+    "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72ujohEdyAFNs9JpEivpcLhfEo6s9ZTK_vuMPvVo6TJM21f_Y_Df0RRmjXihTAhQgVTpxkr1TWW_N2oHswRkd4oX8S1IqDuC80QhrfKQU_xNJBYtc0TMmoydP7i1k0lFFhHpyAiajWnwcIzbOX73CEIIxFlHMu7MQQFrGMs_-9Qj3cz3VA0vc42Zl6ZVOc4=w1280",
+  heroImageAlt: "Front of Spruce Run Lutheran Church, shown on its official website",
   websiteUrl: "",
   challenge:
     "During the COVID-19 pandemic, Spruce Run Lutheran Church needed to quickly implement livestreaming to serve their congregation remotely. They required a simple, affordable solution that could be operated by volunteers with minimal technical expertise.",

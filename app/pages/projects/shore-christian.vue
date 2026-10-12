@@ -8,7 +8,8 @@ const project: Project = {
   year: 2024,
   client: "Shore Christian Fellowship",
   services: ["Live Streaming", "AV Design", "AV Installation"],
-  heroImage: "/images/projects/shore-christian/shore-christian-hero.png",
+  heroImage: "/images/projects/shore-christian/shore-christian-hero.svg",
+  heroImageAlt: "Illustration of a church worship media setup",
   websiteUrl: "",
   challenge:
     "Shore Christian Fellowship was experiencing rapid growth and needed to upgrade their worship production capabilities to serve both their expanding in-person congregation and growing online audience. Their existing equipment was limiting their ability to reach more people effectively.",

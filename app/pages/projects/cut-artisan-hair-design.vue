@@ -6,6 +6,7 @@ interface Project {
   client?: string;
   services?: string[];
   heroImage?: string;
+  heroImageAlt?: string;
   beforeImage?: string;
   afterImage?: string;
   websiteUrl?: string;
@@ -29,7 +30,9 @@ const project: Project = {
     "Paid Ads Strategy",
     "Marketing Systems & Reporting",
   ],
-  heroImage: "",
+  // Reuse the existing salon project photo until a dedicated hero image is available.
+  heroImage: "/images/projects/thumbnails/hair-salon.jpg",
+  heroImageAlt: "Hair stylist working with a client in a salon",
   beforeImage: "",
   afterImage: "",
   websiteUrl: "",

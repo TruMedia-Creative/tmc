@@ -8,7 +8,8 @@ const project: Project = {
   year: 2024,
   client: "Resurgent Church",
   services: ["Live Streaming", "AV Design", "AV Installation"],
-  heroImage: "/images/projects/resurgent/resurgent-hero.png",
+  heroImage: "/images/projects/resurgent/resurgent-hero.svg",
+  heroImageAlt: "Illustration of portable church worship media equipment",
   websiteUrl: "",
   challenge:
     "As a church plant meeting in a rented facility, Resurgent Church needed a complete worship production system that could be set up and torn down weekly. The system had to deliver professional quality while being portable, durable, and simple enough for volunteer teams to operate.",

@@ -5,6 +5,7 @@ export interface Project {
   client?: string;
   services?: string[];
   heroImage?: string;
+  heroImageAlt?: string;
   beforeImage?: string;
   afterImage?: string;
   websiteUrl?: string;

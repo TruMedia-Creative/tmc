@@ -6,6 +6,7 @@ interface Project2 {
   client?: string;
   services?: string[];
   heroImage?: string;
+  heroImageAlt?: string;
   beforeImage?: string;
   afterImage?: string;
   websiteUrl?: string;
@@ -20,6 +21,21 @@ const props = defineProps<{ project: Project2 }>();
 
 <template>
   <div class="space-y-6">
+    <figure
+      v-if="props.project.heroImage"
+      class="overflow-hidden rounded-3xl border border-slate-200/70 bg-white/80 shadow-xl"
+    >
+      <img
+        :src="props.project.heroImage"
+        :alt="
+          props.project.heroImageAlt ||
+          `${props.project.client || props.project.title} project visual`
+        "
+        class="aspect-[16/9] w-full object-cover"
+        loading="lazy"
+        decoding="async"
+      />
+    </figure>
     <div class="rounded-3xl border border-slate-100 bg-white/90 p-6 shadow-lg">
       <p class="text-sm font-semibold text-slate-900">Outcomes</p>
       <p class="mt-3 text-sm text-slate-600">

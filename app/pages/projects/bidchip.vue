@@ -6,6 +6,7 @@ interface Project {
   client?: string;
   services?: string[];
   heroImage?: string;
+  heroImageAlt?: string;
   websiteUrl?: string;
   challenge?: string;
   outcomes?: string;
@@ -31,7 +32,9 @@ const project: Project = {
     "Sales Messaging & Email Systems",
     "Performance Tracking & Optimization",
   ],
-  heroImage: "",
+  // Reuse the existing BidChip marketplace image until an approved project photo is available.
+  heroImage: "/images/projects/thumbnails/bidchip.png",
+  heroImageAlt: "Screenshot of the BidChip electronics marketplace homepage",
   websiteUrl: "",
   challenge:
     "BidChip had an active platform and a growing database of buyers and sellers, but many sellers were dormant or underutilizing the marketplace. Without consistent activation and education, marketplace liquidity and deal velocity were limited.",

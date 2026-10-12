@@ -8,6 +8,9 @@ const project: Project = {
     "Industrial marketing, proposal strategy, and sales enablement for a commercial snow and ice management company.",
   year: 2024,
   client: "Advanced Snow Management",
+  // Reuse the existing project listing photo until a dedicated hero image is available.
+  heroImage: "/images/projects/thumbnails/snow-removal.jpg",
+  heroImageAlt: "Snow-covered commercial properties at dusk",
   services: [
     "Industrial Marketing Strategy",
     "Proposal & RFP Support",

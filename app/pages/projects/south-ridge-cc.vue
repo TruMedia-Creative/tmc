@@ -8,7 +8,8 @@ const project: Project = {
   year: 2024,
   client: "South Ridge Community Church",
   services: ["Live Streaming", "AV Design", "AV Installation"],
-  heroImage: "/images/projects/south-ridge-cc/south-ridge-cc-hero.png",
+  heroImage: "/images/projects/south-ridge-cc/south-ridge-cc-hero.svg",
+  heroImageAlt: "Illustration of a church worship media setup",
   websiteUrl: "",
   challenge:
     "South Ridge Community Church needed a professional-grade live production system to support their growing congregation and expanding online ministry. Their existing setup was inadequate for multi-campus streaming and lacked the reliability needed for weekly worship services.",

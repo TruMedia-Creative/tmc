@@ -13,7 +13,8 @@ const project: Project = {
     "System Integration",
     "Technical Consultation",
   ],
-  heroImage: "/images/projects/fiddlers-elbow/fiddlers-elbow-hero.png",
+  heroImage: "/images/projects/fiddlers-elbow/fiddlers-elbow-hero.svg",
+  heroImageAlt: "Illustration of a conceptual ballroom lighting layout",
   websiteUrl: "",
   challenge:
     "Fiddler's Elbow Country Club needed a complete overhaul of their outdated lighting system. The existing infrastructure was inefficient, difficult to control, and didn't meet the modern standards required for their events and daily operations.",
