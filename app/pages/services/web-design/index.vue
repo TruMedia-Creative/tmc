@@ -78,7 +78,7 @@ useSeoMeta({
     >
       <UPageList>
         <li v-for="(item, index) in page.idealFor.items" :key="index">
-          {{ item }}
+          <MDC :value="item" />
         </li>
       </UPageList>
     </UPageSection>

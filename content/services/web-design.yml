@@ -1,9 +1,9 @@
-title: Web Design That Helps You Sell More Without The Hassle
+title: Websites that Help You Sell More
 description: |
-  We design, develop, and deploy sales-ready web solutions for service-based businesses, turning complex B2B offerings into closed-won deals.
+  We design, develop, and deploy sales-ready web solutions for service-based businesses, so that you can focus on delivering for your customers.
 seo:
-  title: Web Design & Development Services for B2B Companies | TruMedia Creative
-  description: Professional web design and development for industrial and B2B companies in New Jersey. Turn your website into a sales-ready tool that converts visitors into clients. Custom websites, landing pages, and conversion-focused design.
+  title: Web Design & Development Services for Professional Services Companies | TruMedia Creative
+  description: Professional web design and development for industrial and professional services companies in New Jersey. Turn your website into a sales-ready tool that converts visitors into clients. Custom websites, landing pages, and conversion-focused design.
 navigation: false
 hero:
   headline: Web Design for Industrial & Professional Services
@@ -41,7 +41,7 @@ atAGlance:
 
 sections:
   - id: problem
-    title: Why Most Company Websites Don't Convert or Drive Revenue
+    title: Why Most Company Websites Fail.
     headline: The Problem with Most Company Websites
     orientation: vertical
     reverse: false
@@ -49,31 +49,29 @@ sections:
       src: /images/services/video-growth-engine/video-engine-problem.png
       alt: Problem with Most Company Websites
     description: >
-      Most company websites look polished but fail at their core job, turning interest into action.
-      They act like digital brochures instead of revenue assets—disconnected from sales, unclear on who they serve,
-      and silent when buyers are ready to decide. These are the most common points of failure we see in company websites.
+      We’ve seen the same six problems quietly hold businesses back. Do any of these sound familiar?
     links:
       - label: Get a Free Website Audit
         to: /contact
         trailingIcon: i-lucide-arrow-right
         icon: i-lucide-monitor-cog
     features:
-      - title: Built as a brochure, not a conversion system
-        description: Pages are designed to look good, not to guide buyers toward clear next steps that support sales.
+      - title: Built to Impress, Not Convert
+        description: Websites are designed as digital brochures that are made to look pretty instead of acting as a guide for buyers.
         icon: i-lucide-layout
-      - title: No clear messaging hierarchy or buyer flow
-        description: Visitors aren’t sure who the site is for, what problem it solves, or what to do next—so they leave.
+      - title: Your Message Gets Lost
+        description: Visitors aren’t sure who the site is for, what problem it solves, or what to do next...so they leave.
         icon: i-lucide-shuffle
-      - title: Not aligned with buyer questions, objections, or decision stages
+      - title: Buyers Are Left With Questions
         description: Critical information is missing or buried, forcing buyers to fill in the gaps themselves.
         icon: i-lucide-circle-question-mark
-      - title: Sales teams don’t use the site during real deals
+      - title: Your Sales Team Can’t Sell With It
         description: The website isn’t structured to support sales conversations, follow-ups, or deal progression.
         icon: i-lucide-user-x
-      - title: Success measured by traffic instead of leads and pipeline
+      - title: Success Is Measured by the Wrong Metrics
         description: High traffic means nothing if it doesn’t translate into conversations, opportunities, and revenue
         icon: i-lucide-eye-off
-      - title: Hard to update, slow to evolve, and dependent on developers
+      - title: Every Update Becomes a Project
         description: Simple changes require tickets, timelines, or rework—so the site quickly falls out of sync with the business.
         icon: i-lucide-clock
   - id: solution
@@ -83,43 +81,34 @@ sections:
     orientation: vertical
     reverse: true
     headline: The Solution to Drive Revenue with a Website
-    title: What's Required for a Website to Actually Drive Revenue
+    title: What It Takes to Build a Website That Actually Drives Revenue
     description: >
-      A website only drives revenue when it supports how buyers evaluate options,
-      build confidence, and take next steps.
-      That requires clear positioning, intentional page structure,
-      and tight alignment with sales and marketing workflows.
-      Our web design outcomes is built to do exactly that.
+      A website that drives revenue does more than look good. It helps buyers understand your value, builds trust, and guides them toward the next step.
+      Here’s how we make it happen.
     features:
-      - title: Clear Positioning & Buyer-Focused Messaging
+      - title: Messaging That Makes Your Value Clear
         description: >
-          Your site clearly communicates who it's for, what problem you solve,
-          and why you're the right choice—above the fold and throughout the journey.
+          Show buyers who you serve, what you solve, and why you’re the right choice.
         icon: i-lucide-target
-      - title: Conversion-Driven Page Structure
+      - title: Pages Built to Convert
         description: >
-          Pages are intentionally laid out to guide visitors from interest to action,
-          not just present information.
+          Answer buyer questions, address objections, and guide visitors from interest to action.
         icon: i-lucide-layout-template
-      - title: Sales-Enabled Website Architecture
+      - title: A Website That Supports Sales
         description: >
-          The site is designed to support real sales conversations, follow-ups,
-          and deal progression—not just marketing traffic.
+          Equip your sales team with a website that builds confidence, supports conversations, and moves deals forward.
         icon: i-lucide-briefcase
-      - title: Measured by Leads, Pipeline, and Revenue
+      - title: Results Beyond Website Traffic
         description: >
-          Performance is tracked by qualified inquiries, sales usage,
-          and downstream revenue impact.
+          Measure what matters, like qualified leads, sales opportunities, and pipeline growth.
         icon: i-lucide-line-chart
-      - title: Fast Updates Without Developer Bottlenecks
+      - title: Easy to Update. Built to Evolve.
         description: >
-          Content, messaging, and offers can be updated quickly without breaking layouts
-          or relying on long dev cycles.
+          Keep your website current, launch new offers, and make changes without relying on developers.
         icon: i-lucide-zap
-      - title: SEO-Ready by Default, Not as an Afterthought
+      - title: Built to Be Found (SEO)
         description: >
-          Pages are structured for discoverability, clarity, and long-term search performance,
-          so the site compounds value over time.
+          SEO best practices built in from day one, helping the right buyers discover your business.
         icon: i-lucide-search
     links:
       - label: Want to See How This Would Work for Your Website?
@@ -132,47 +121,41 @@ sections:
       alt: How We Help You Win More Deals with Your Website
     orientation: vertical
     reverse: false
-    headline: How We Help You Win More Deals with Your Website
+    headline: How We Turn Your Website Into a Sales Asset
     title: How Our Web Design Process Works
     description: >
-      We help you turn your expertise into a strategic website that supports
-      marketing and sales at every stage of the buying journey. Our web design
-      outcomes combines positioning, structure, and deployment so your site is
-      built with intention and performs where it matters most.
+      We turn your expertise into a website built to attract the right buyers and support your sales process. From messaging and strategy to design and development, every step is focused on making your website work harder for your business.
     features:
       - title: Message & Positioning Clarity
         description: >
-          We define your core message, positioning, and differentiation so your
-          website speaks directly to the problems your buyers care about.
+          We sharpen your message, clarify what sets you apart, and speak directly to what your buyers care about.
         icon: i-lucide-compass
-      - title: Buyer-Focused Site Architecture
+      - title: Buyer-Focused Site Structure
         description: >
-          We design a structured site mapped to buyer stages including
-          education, evaluation, objection handling, and decision support.
+          We organize your website around how buyers research, evaluate, and make decisions—making every step feel intuitive.
         icon: i-lucide-map
-      - title: Strategic Website Development
+      - title:  Strategic Design & Development
         description: >
-          We build focused, conversion-ready pages designed for clarity,
-          credibility, and real-world sales usage.
+         We create clear, credible, conversion-focused pages that look professional and support real business goals.
         icon: i-lucide-layout-template
       - title: Sales & Marketing Integration
         description: >
-          We help integrate your website into outreach, follow-ups, proposals, and
-          sales conversations so it actively supports deals.
+          We connect your website to your marketing and sales efforts, 
+          helping support conversations, follow-ups, and deal progression.
         icon: i-lucide-plug
     links:
-      - label: See How Our Web Design Process Works
+      - label: Explore Our Web Design Process 
         to: /contact
         trailingIcon: i-lucide-arrow-right
         icon: i-lucide-globe
-      - label: See Our Process for Creating Sales-Ready Websites
+      - label: See How We Build Sales-Ready Websites 
         to: "#our-process"
         trailingIcon: i-lucide-arrow-right
         icon: i-lucide-calendar
         variant: subtle
   - id: proof
     image:
-      src: /images/services/web-design/web-design-proof.png
+      src: /images/web-design/web-design-proof.jpg
       alt: Proof That Our Web Design outcomes Works
     orientation: vertical
     reverse: true
@@ -338,7 +321,7 @@ pricing:
         color: primary
         variant: solid
       features:
-        - Everything in Starter, plus:
+        - Everything in Starter, plus...
         - Up to 10 pages with custom layouts
         - Advanced conversion optimization
         - Sales-enablement page templates
@@ -361,7 +344,7 @@ pricing:
       price: Starting at $24,500
       tagline: Maximum Impact
       features:
-        - Everything in Growth, plus:
+        - Everything in Growth, plus...
         - Unlimited pages with custom functionality
         - Multi-tier buyer journey mapping
         - Advanced integrations & custom features
@@ -385,7 +368,8 @@ idealFor:
     Our Website Growth System works best for service-based B2B companies with complex
     offerings who need their website to actively support sales conversations and revenue growth.
   items:
-    - Industrial services companies (manufacturing, distribution, contractors)
+    - >-
+     [Industrial services](/industries/contractors-manufactures){class="text-primary hover:underline"} companies (manufacturing, distribution, contractors)
     - Professional service firms (consulting, engineering, financial services)
     - B2B companies with 6+ month sales cycles and multiple decision-makers
     - Service businesses struggling with "tire-kicker" inquiries instead of qualified leads
