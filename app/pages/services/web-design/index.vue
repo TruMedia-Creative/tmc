@@ -33,6 +33,7 @@ useSeoMeta({
       :headline="page.atAGlance.headline"
       :features="page.atAGlance.items"
       orientation="vertical"
+      :ui="{ features: 'sm:grid-cols-2 lg:grid-cols-2 gap-8' }"
     />
 
     <!-- Main Sections -->
@@ -48,6 +49,11 @@ useSeoMeta({
       :price="section.price"
       :links="section.links"
       :image="section.image"
+      :ui="
+        section.features?.length === 4
+          ? { features: 'sm:grid-cols-2 lg:grid-cols-2 gap-8' }
+          : undefined
+      "
     >
     </UPageSection>
 
@@ -86,7 +92,7 @@ useSeoMeta({
       orientation="vertical"
       class="bg-neutral-50 dark:bg-neutral-900"
     >
-      <UPageGrid>
+      <UPageGrid class="lg:grid-cols-2">
         <UPageCard
           v-for="(solution, index) in page.relatedSolutions.items"
           :key="index"
@@ -110,6 +116,11 @@ useSeoMeta({
       :features="page.performance.commitments"
       orientation="vertical"
       class="bg-neutral-50 dark:bg-neutral-900"
+      :ui="
+        page.performance.commitments.length === 4
+          ? { features: 'sm:grid-cols-2 lg:grid-cols-2 gap-8' }
+          : undefined
+      "
     />
 
     <!-- FAQ Section -->

@@ -71,7 +71,7 @@ useSeoMeta({
       :title="page.testimonials.title"
       :description="page.testimonials.description"
     >
-      <UPageColumns class="xl:columns-4">
+      <UPageColumns class="xl:columns-3">
         <UPageCard
           v-for="(testimonial, index) in page.testimonials.items"
           :key="index"
