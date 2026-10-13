@@ -48,7 +48,7 @@ useSeoMeta({
         }}</time>
       </template>
 
-      <div class="flex flex-wrap items-center gap-3 mt-4">
+      <div class="mt-4 flex flex-wrap items-center gap-3">
         <UButton
           v-for="(author, index) in post.authors"
           :key="index"
@@ -59,7 +59,6 @@ useSeoMeta({
           size="sm"
         >
           <UAvatar v-bind="author.avatar" alt="Author avatar" size="2xs" />
-
           {{ author.name }}
         </UButton>
       </div>

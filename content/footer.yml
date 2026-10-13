@@ -51,7 +51,7 @@ columns:
       - label: Content Creation
         to: /services/content-creation
         icon: i-lucide-edit-3
-        disabled: true
+        disabled: false
 
   - label: Industries We Serve
     children:
@@ -85,11 +85,11 @@ columns:
       - label: Tutorials
         to: /resources/tutorials
         icon: i-lucide-video
-        disabled: true
+        disabled: false
       - label: Case Studies
         to: /resources/case-studies
         icon: i-lucide-file-text
-        disabled: true
+        disabled: false
       - label: Blog
         to: /resources/blog
         icon: i-lucide-edit-3
@@ -97,4 +97,4 @@ columns:
       - label: Media Kit
         to: /resources/media-kit
         icon: i-lucide-download
-        disabled: true
+        disabled: false

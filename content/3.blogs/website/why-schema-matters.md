@@ -2,16 +2,14 @@
 title: Why Schema Matters for Small Business Websites
 description: Learn what schema markup is, how it can help search engines understand your website, and why it does not guarantee rich results.
 date: 2025-01-01
-image: /images/blogs/why-schema-matters.jpg
-alt: Illustration of schema markup on a website
-author:
-  name: TruMedia Creative
-  avatar: /images/team/author.jpg
-category: Website
-tags:
-  - schema
-  - seo
-  - website
+authors:
+  - name: TruMedia Creative
+    to: https://www.trumediacreative.com
+    avatar:
+      src: /images/who-we-are-photos/Lar-headshot.png
+badge:
+  label: Website
+tags: [schema, seo, website]
 published: false
 ---
 

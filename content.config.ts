@@ -510,6 +510,26 @@ export const collections = {
     type: "page",
     schema: createServicePageSchema(),
   }),
+  contentcreation: defineCollection({
+    source: "services/content-creation.yml",
+    type: "page",
+    schema: createPageMetaSchema().extend({
+      hero: createHeroSchema(),
+      offerings: z.array(
+        z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty(),
+          icon: z.string().nonempty().editor({ input: "icon" }),
+        }),
+      ),
+      process: z.array(
+        z.object({
+          title: z.string().nonempty(),
+          description: z.string().nonempty(),
+        }),
+      ),
+    }),
+  }),
   videoengine: defineCollection({
     source: "services/video-growth-engine.yml",
     type: "page",
@@ -749,12 +769,17 @@ export const collections = {
     type: "page",
   }),
   posts: defineCollection({
-    source: "3.blog/**/*",
+    source: {
+      include: "3.blogs/**/*.md",
+      prefix: "/blog",
+    },
     type: "page",
     schema: z.object({
-      image: z.object({
-        src: z.string().nonempty().editor({ input: "media" }),
-      }),
+      image: z
+        .object({
+          src: z.string().nonempty().editor({ input: "media" }),
+        })
+        .optional(),
       authors: z.array(
         z.object({
           name: z.string().nonempty(),

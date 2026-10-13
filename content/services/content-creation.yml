@@ -1,0 +1,38 @@
+title: Content Creation for B2B and Expert-Led Businesses
+description: Turn the knowledge inside your business into clear content for your website, marketing, and sales conversations.
+seo:
+  title: B2B Content Creation | TruMedia Creative
+  description: Strategic writing and video content for B2B and expert-led businesses, including service pages, articles, case studies, explainers, and landing pages.
+hero:
+  headline: Content Creation
+  title: Make your expertise easier to understand and use.
+  description: We work with your technical experts to shape useful content around what buyers need to know—from website copy and educational articles to case studies and explainer videos.
+  links:
+    - label: Talk About Your Content Needs
+      to: /contact
+      icon: i-lucide-calendar
+      size: xl
+      variant: solid
+offerings:
+  - title: Website and service-page copy
+    description: Clarify what you offer, who it is for, and how buyers can take the next step.
+    icon: i-lucide-panels-top-left
+  - title: Educational articles and guides
+    description: Organize expert knowledge into useful answers to the questions your buyers ask.
+    icon: i-lucide-notebook-pen
+  - title: Case studies and proof assets
+    description: Shape approved customer stories into written or video materials that support sales conversations.
+    icon: i-lucide-award
+  - title: Explainer videos and landing pages
+    description: Pair clear explanations with focused pages for a service, offer, or campaign.
+    icon: i-lucide-clapperboard
+  - title: Content planning and repurposing
+    description: Plan a practical set of assets and adapt approved source material for relevant channels.
+    icon: i-lucide-repeat-2
+process:
+  - title: Start with the buyer and the goal
+    description: Identify the audience, the decision they are making, and the questions the content should answer.
+  - title: Work with your subject-matter experts
+    description: Gather accurate details from the people who know the work, then shape them into clear content.
+  - title: Review, publish, and put it to use
+    description: Confirm facts and approvals, prepare the agreed assets, and connect them to the pages or sales workflows where they belong.
