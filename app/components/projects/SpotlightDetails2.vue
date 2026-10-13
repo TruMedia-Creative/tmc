@@ -64,9 +64,6 @@ const props = defineProps<{ project: Project2 }>();
       </div>
     </div>
 
-    <ProjectsSpotlightBeforeAfter2
-      :before-image="props.project.beforeImage"
-      :after-image="props.project.afterImage"
-    />
+    
   </div>
 </template>
