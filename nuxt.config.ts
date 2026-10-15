@@ -234,12 +234,12 @@ export default defineNuxtConfig({
       "/coming-soon",
       "/login",
       "/projects/nourish-to-heal-2",
-      "/resources/blog",
       "/resources/case-studies",
       "/resources/media-kit",
       "/resources/tutorials",
       "/services/content-creation",
       "/signup",
+      "/pricing"
     ],
   },
 });
